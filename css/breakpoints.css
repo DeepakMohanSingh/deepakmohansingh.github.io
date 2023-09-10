@@ -1,0 +1,1035 @@
+@media (min-width: 576px) {
+    .logo {
+        left: 0;
+    }
+
+    /* .menu-icon {
+        right: 0;
+    } */
+
+    .menu-item-wrapper {
+        font-size: 4.5rem;
+    }
+
+    .hero-main {
+        font-size: 2.8rem;
+    }
+
+    .hero-sub {
+        font-size: 1.4rem;
+    }
+
+    .menu-icon {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+
+    .menu-icon div {
+        height: 0.25rem;
+        width: 1.4rem;
+    }
+
+    .menu-icon div:nth-child(1) {
+        top: calc(50% - 0.38rem);
+    }
+
+    .menu-icon div:nth-child(3) {
+        top: calc(50% + 0.38rem);
+    }
+
+    .hero .name {
+        font-weight: 500;
+        padding-bottom: 1rem;
+    }
+
+    .hero .role .role-1,
+    .hero .role .role-2 {
+        font-size: 5rem;
+        -webkit-text-stroke: 3px var(--color);
+    }
+
+    .scroll-indication-text {
+        font-size: 1rem;
+    }
+
+    .para-highlight {
+        font-size: 2.15rem;
+    }
+
+    .timeline {
+        width: 2rem;
+    }
+
+    .timeline .car {
+        width: 1.6rem;
+    }
+
+    .timeline .experience-lap .lap-row div {
+        min-width: 0.45rem;
+        height: 0.45rem;
+    }
+
+    #education .container .ed-intro div {
+        font-size: 2.5rem;
+    }
+
+    #education .container .ed-intro div .material-symbols-outlined {
+        font-size: 2.5rem;
+    }
+
+    .educational-qualification-sticky-content {
+        font-size: 3.5rem;
+    }
+
+    .educational-qualification-non-sticky-content {
+        padding: 1rem;
+    }
+
+    .degree-wrapper .slide-content-number,
+    .education-slide-end .slide-content-number {
+        font-size: 2.5rem;
+    }
+
+    .degree-name,
+    .education-slide-end .end-card {
+        font-size: 3.25rem;
+    }
+
+    /* .educational-qualification-non-sticky-content .mac .code-block .slide {
+        padding: 0.8rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .code-block .slide-heading {
+        font-size: 2.45rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .code-block .course-heading {
+        font-size: 1.4rem;
+    } */
+
+    .educational-qualification-non-sticky-content .mac .screen-swiper .screen-swiper-info {
+        font-size: 0.8rem;
+    }
+
+    .skills-intro,
+    .skills-intro-animation div:nth-child(2) {
+        font-size: 6rem;
+    }
+
+    .skill-type {
+        font-size: 1.5rem;
+    }
+
+    .skill-type-wrapper .material-symbols-outlined {
+        font-size: 1.5rem;
+    }
+
+    .awards-intro {
+        font-size: 4rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .award-content {
+        height: 17.5rem;
+        width: 17.5rem;
+    }
+
+    .social-icon-wrapper img {
+        width: 4rem;
+    }
+
+    .section-header {
+        font-size: 2.5rem;
+    }
+
+    @-webkit-keyframes size-reducer {
+        to {
+            font-size: 2.6rem;
+            letter-spacing: 0.6rem;
+            opacity: 0;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .preloader .triangle {
+        border-bottom: 40px solid #000;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+    }
+
+    .preloader .square {
+        width: 40px;
+        height: 40px;
+    }
+
+    .preloader .circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .menu-icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .menu-icon div {
+        height: 0.25rem;
+        width: 1.5rem;
+    }
+
+    .menu-icon div:nth-child(1) {
+        top: calc(50% - 0.5rem);
+    }
+
+    .menu-icon div:nth-child(3) {
+        top: calc(50% + 0.5rem);
+    }
+
+    .menu-item-wrapper {
+        font-size: 5rem;
+    }
+
+    .mac {
+        margin-top: 3rem;
+        height: calc(100% - ((2.5rem * 1.5) + 3rem));
+    }
+
+    .hero .name {
+        font-size: 6rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .hero .role .role-1,
+    .hero .role .role-2 {
+        font-size: 6rem;
+    }
+
+    .scroll-indication {
+        height: 3.5rem;
+        width: 2.2rem;
+    }
+
+    .scroll-indication .ball {
+        height: 0.6rem;
+        width: 0.6rem;
+    }
+
+    .para-highlight {
+        font-size: 2.38rem;
+    }
+
+    #education .container .ed-intro div {
+        font-size: 3.2rem;
+    }
+
+    #education .container .ed-intro div .material-symbols-outlined {
+        font-size: 3.2rem;
+    }
+
+    .educational-qualification-sticky-content {
+        font-size: 4.5rem;
+    }
+
+    .educational-qualification-non-sticky-content {
+        padding: 1.5rem;
+    }
+
+    .about-degree-wrapper {
+        flex-direction: unset;
+    }
+
+    .about-degree-heading,
+    .project-heading {
+        font-size: 2.5rem;
+    }
+
+    .about-degree-point-wrapper {
+        font-size: 1.2rem;
+        justify-content: center;
+    }
+
+    .project-container {
+        align-items: center;
+    }
+
+    .project-number {
+        font-size: 2.5rem;
+    }
+
+    .project-name {
+        font-size: 1.5rem;
+    }
+
+    .education-summary .heading {
+        font-size: 2.5rem;
+    }
+
+    .education-summary .summary-wrapper .summary-content .summary-number {
+        font-size: 2.85rem;
+    }
+
+    .education-summary .summary-wrapper .summary-content .summary-heading {
+        font-size: 1.25rem;
+    }
+
+    /* .educational-qualification-non-sticky-content .mac .code-block .slide {
+        padding: 1rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .code-block .slide-heading {
+        font-size: 3.18rem;
+    } */
+
+    .educational-qualification-non-sticky-content .mac .code-block .slide-point-wrapper .slide-point {
+        font-size: 1.185rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .screen-swiper .screen-swiper-button-wrapper span {
+        font-size: 2.8rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .screen-swiper .screen-swiper-info {
+        font-size: 1rem;
+    }
+
+    .skills-intro,
+    .skills-intro-animation div:nth-child(2) {
+        font-size: 7rem;
+    }
+
+    .horizontal-view-element {
+        height: 17rem;
+        width: 17rem;
+    }
+
+    .horizontal-view-element img {
+        width: 11rem;
+    }
+
+    .skill-type-wrapper {
+        margin-bottom: 1.5rem;
+    }
+
+    .skill-type {
+        font-size: 2rem;
+    }
+
+    .skill-type-wrapper .material-symbols-outlined {
+        font-size: 2rem;
+    }
+
+    .skill-heading {
+        font-size: 2rem;
+    }
+
+    .skill-heading .material-symbols-outlined {
+        font-size: 2.25rem;
+    }
+
+    .skill-name {
+        font-size: 1.45rem;
+    }
+
+    .awards-intro {
+        font-size: 5.2rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .award-content {
+        height: 19rem;
+        width: 19rem;
+    }
+
+    .award-name {
+        font-size: 1.45rem;
+        font-weight: 600;
+        line-height: 1;
+        padding-bottom: 0.5rem;
+    }
+
+    .award-description {
+        font-size: 1rem;
+    }
+
+    .linkedin-name {
+        font-size: 1.2rem;
+    }
+
+    .linkedin-post {
+        font-size: 1.25rem;
+    }
+
+    .section-header {
+        font-size: 3rem;
+    }
+
+    @-webkit-keyframes size-reducer {
+        to {
+            font-size: 2.8rem;
+            letter-spacing: 0.8rem;
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes scroll-down {
+        25% {
+            transform: translateY(calc(100% - 0.6rem));
+        }
+
+        40% {
+            transform: translateY(calc(100% - 1.4rem));
+        }
+
+        58% {
+            transform: translateY(calc(100% - 0.6rem));
+        }
+
+        70% {
+            transform: translateY(calc(100% - 0.9rem));
+        }
+
+        77% {
+            transform: translateY(calc(100% - 0.6rem));
+        }
+
+        100% {
+            transform: translateY(calc(100% - 0.6rem));
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-degree-heading {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .preloader .triangle {
+        border-bottom: 40px solid #000;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+    }
+
+    .preloader .square {
+        width: 40px;
+        height: 40px;
+    }
+
+    .preloader .circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
+    .menu-item-wrapper {
+        font-size: 5.5rem;
+    }
+
+    .mac {
+        margin-top: 3.5rem;
+        height: calc(100% - ((3rem * 1.5) + 3.5rem));
+    }
+
+    .mac .code-block {
+        font-size: 1.2rem;
+    }
+
+    .mac .code-block .line-of-code .cursor-spot {
+        height: 1.6rem;
+    }
+
+    .hero .name {
+        font-size: 7.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .hero .role {
+        padding-bottom: 0;
+    }
+
+    .hero .role .role-1,
+    .hero .role .role-2 {
+        font-size: 7.5rem;
+    }
+
+    .para-highlight {
+        font-size: 2.5rem;
+    }
+
+    .timeline {
+        margin-block: 1.25rem;
+    }
+
+    .experience-wrapper {
+        margin: 1.25rem;
+    }
+
+    #education .container .ed-intro div {
+        font-size: 3.8rem;
+    }
+
+    #education .container .ed-intro div .material-symbols-outlined {
+        font-size: 3.8rem;
+    }
+
+    .educational-qualification-sticky-content {
+        font-size: 5.8rem;
+    }
+
+    .educational-qualification-non-sticky-content {
+        padding: 2.5rem;
+    }
+
+    .degree-wrapper .slide-content-number,
+    .education-slide-end .slide-content-number {
+        font-size: 3rem;
+    }
+
+    .degree-name,
+    .education-slide-end .end-card {
+        font-size: 4rem;
+    }
+
+    .about-degree-heading,
+    .project-heading {
+        font-size: 3.5rem;
+    }
+
+    .about-degree-point-wrapper {
+        font-size: 1.55rem;
+    }
+
+    /* .educational-qualification-non-sticky-content .mac .code-block .slide {
+        padding: 1.2rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .code-block .slide-heading {
+        font-size: 3.85rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .code-block .course-heading {
+        font-size: 1.6rem;
+    } */
+
+    .about-degree-point-wrapper {
+        font-size: 1.4rem;
+    }
+
+    .project-number {
+        font-size: 3rem;
+    }
+
+    .project-name {
+        font-size: 1.75rem;
+    }
+
+    .education-summary .heading {
+        font-size: 3rem;
+    }
+
+    .education-summary .summary-wrapper .summary-content .summary-number {
+        font-size: 3.35rem;
+    }
+
+    .education-summary .summary-wrapper .summary-content .summary-heading {
+        font-size: 1.35rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .screen-swiper .screen-swiper-button-wrapper span {
+        font-size: 3rem;
+    }
+
+    .skills-intro,
+    .skills-intro-animation div:nth-child(2) {
+        font-size: 8rem;
+    }
+
+    .awards-intro {
+        font-size: 7.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .linkedin {
+        padding: 1rem;
+    }
+
+    .social-icon-wrapper img {
+        width: 4.5rem;
+    }
+
+    .section-header {
+        font-size: 3.5rem;
+    }
+
+    .section-header .underline-animation {
+        height: 0.3rem;
+    }
+
+    @-webkit-keyframes size-reducer {
+        to {
+            font-size: 3rem;
+            letter-spacing: 0.9rem;
+            opacity: 0;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu-item-wrapper {
+        font-size: 6rem;
+    }
+
+    .mac .mac-button-wrapper .mac-button {
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+
+    .mac .code-block {
+        font-size: 1.4rem;
+        height: calc(100% - (0.8rem + 4rem));
+        margin-block: 2rem;
+    }
+
+    .mac .code-block .line-of-code .cursor-spot {
+        height: 1.75rem;
+    }
+
+    .hero .name {
+        font-size: 8.8rem;
+    }
+
+    .hero .role .role-1,
+    .hero .role .role-2 {
+        font-size: 8.8rem;
+    }
+
+    .scroll-indication {
+        height: 4rem;
+        width: 2.5rem;
+    }
+
+    .scroll-indication .ball {
+        height: 0.75rem;
+        width: 0.75rem;
+    }
+
+    .para-highlight {
+        font-size: 2.6rem;
+    }
+
+    .timeline {
+        margin-block: 1.4rem;
+    }
+
+    .experience-wrapper {
+        margin: 1.4rem;
+    }
+
+    #education .container .ed-intro div {
+        font-size: 4.2rem;
+    }
+
+    #education .container .ed-intro div .material-symbols-outlined {
+        font-size: 4.2rem;
+    }
+
+    .educational-qualification-sticky-content {
+        font-size: 7.5rem;
+    }
+
+    .educational-qualification-non-sticky-content {
+        padding: 3.3rem;
+    }
+
+    .degree-wrapper .slide-content-number,
+    .education-slide-end .slide-content-number {
+        font-size: 4rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .degree-name,
+    .education-slide-end .end-card {
+        font-size: 5rem;
+        padding: 1.5rem;
+    }
+
+    .degree-stream,
+    .education-slide-end .message {
+        padding: 1.5rem;
+    }
+
+    .about-degree-heading,
+    .project-heading {
+        font-size: 4.5rem;
+        padding: 1.5rem;
+    }
+
+    .about-degree-point-wrapper {
+        font-size: 1.65rem;
+        padding: 1.5rem;
+    }
+
+    .project-number {
+        font-size: 3.25rem;
+    }
+
+    .project-name {
+        font-size: 1.85rem;
+    }
+
+    .education-summary .heading {
+        font-size: 4rem;
+        padding: 1.25rem;
+    }
+
+    .education-summary .summary-wrapper .summary-content .summary-number {
+        font-size: 4.25rem;
+    }
+
+    .education-summary .summary-wrapper .summary-content .summary-heading {
+        font-size: 1.5rem;
+    }
+
+    /* .educational-qualification-non-sticky-content .mac .code-block .slide {
+        padding: 1.5rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .code-block .slide-heading {
+        font-size: 4.3rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .code-block .course-heading {
+        font-size: 1.7rem;
+    } */
+
+    .educational-qualification-non-sticky-content .mac .code-block .slide-point-wrapper .slide-point {
+        font-size: 1.3rem;
+    }
+
+    .skills-intro,
+    .skills-intro-animation div:nth-child(2) {
+        font-size: 9rem;
+    }
+
+    .horizontal-view-element {
+        height: 19rem;
+        width: 19rem;
+    }
+
+    .horizontal-view-element img {
+        width: 12.5rem;
+    }
+
+    .skill-type-wrapper {
+        margin-bottom: 1.75rem;
+    }
+
+    .skill-type {
+        font-size: 3rem;
+    }
+
+    .skill-type-wrapper .material-symbols-outlined {
+        font-size: 3rem;
+    }
+
+    .skill-heading {
+        font-size: 2.3rem;
+    }
+
+    .skill-heading .material-symbols-outlined {
+        font-size: 2.55rem;
+    }
+
+    .skill-name {
+        font-size: 1.55rem;
+    }
+
+    .awards-intro {
+        font-size: 9rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .award-content {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .award-name {
+        font-size: 1.6rem;
+    }
+
+    .section-header {
+        font-size: 3.8rem;
+    }
+
+    .text-stroke-real {
+        -webkit-text-stroke: 3px var(--color);
+    }
+
+    @-webkit-keyframes size-reducer {
+        to {
+            font-size: 3.5rem;
+            letter-spacing: 1rem;
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes scroll-down {
+        25% {
+            transform: translateY(calc(100% - 0.75rem));
+        }
+
+        40% {
+            transform: translateY(calc(100% - 1.55rem));
+        }
+
+        58% {
+            transform: translateY(calc(100% - 0.75rem));
+        }
+
+        70% {
+            transform: translateY(calc(100% - 1.05rem));
+        }
+
+        77% {
+            transform: translateY(calc(100% - 0.75rem));
+        }
+
+        100% {
+            transform: translateY(calc(100% - 0.75rem));
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .preloader .triangle {
+        border-bottom: 60px solid #000;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+    }
+
+    .preloader .square {
+        width: 60px;
+        height: 60px;
+    }
+
+    .preloader .circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 3.5rem;
+    }
+
+    .menu-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .menu-icon div {
+        height: 0.30rem;
+        width: 2rem;
+    }
+
+    .menu-icon div:nth-child(1) {
+        top: calc(50% - 0.6rem);
+    }
+
+    .menu-icon div:nth-child(3) {
+        top: calc(50% + 0.6rem);
+    }
+
+    .menu-item-wrapper {
+        font-size: 7rem;
+    }
+
+    .mac {
+        margin-top: 4rem;
+        height: calc(100% - ((3.5rem * 1.5) + 4rem));
+    }
+
+    .hero .name {
+        font-size: 11rem;
+    }
+
+    .hero .role .role-1,
+    .hero .role .role-2 {
+        font-size: 10rem;
+    }
+
+    .para-highlight {
+        font-size: 3rem;
+    }
+
+    .timeline {
+        margin-block: 1.5rem;
+    }
+
+    .experience-wrapper {
+        margin: 1.5rem;
+    }
+
+    #education .container .ed-intro div {
+        font-size: 4.75rem;
+    }
+
+    #education .container .ed-intro div .material-symbols-outlined {
+        font-size: 4.75rem;
+    }
+
+    .educational-qualification-sticky-content {
+        font-size: 9rem;
+    }
+
+    .educational-qualification-non-sticky-content {
+        padding: 4rem;
+    }
+
+    .degree-wrapper .slide-content-number,
+    .education-slide-end .slide-content-number {
+        font-size: 5rem;
+    }
+
+    .degree-name,
+    .education-slide-end .end-card {
+        font-size: 6rem;
+    }
+
+    .about-degree-heading,
+    .project-heading {
+        font-size: 6rem;
+    }
+
+    .about-degree-point-wrapper {
+        font-size: 1.75rem;
+    }
+
+    .project-number {
+        font-size: 3.5rem;
+    }
+
+    .project-name {
+        font-size: 2rem;
+    }
+
+    .education-summary .heading {
+        font-size: 6rem;
+        padding: 1.5rem;
+    }
+
+    .education-summary .summary-wrapper .summary-content .summary-number {
+        font-size: 5rem;
+    }
+
+    .education-summary .summary-wrapper .summary-content .summary-heading {
+        font-size: 1.6rem;
+    }
+
+    .education-summary .summary-wrapper .summary-content {
+        padding: 1.2rem 1rem;
+    }
+
+    /* .educational-qualification-non-sticky-content .mac .code-block .slide-heading {
+        font-size: 5rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .code-block .course-heading {
+        font-size: 1.85rem;
+    } */
+
+    .educational-qualification-non-sticky-content .mac .code-block .slide-point-wrapper .slide-point {
+        font-size: 1.5rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .screen-swiper .screen-swiper-button-wrapper span {
+        font-size: 3.2rem;
+    }
+
+    .educational-qualification-non-sticky-content .mac .screen-swiper .screen-swiper-info {
+        font-size: 1.2rem;
+    }
+
+    .skills-intro,
+    .skills-intro-animation div:nth-child(2) {
+        font-size: 10rem;
+    }
+
+    .horizontal-view-element {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .horizontal-view-element img {
+        width: 13rem;
+    }
+
+    .skill-type-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    .skill-type {
+        font-size: 4rem;
+    }
+
+    .skill-type-wrapper .material-symbols-outlined {
+        font-size: 4rem;
+    }
+
+    .skill-heading {
+        font-size: 2.5rem;
+    }
+
+    .skill-heading .material-symbols-outlined {
+        font-size: 2.75rem;
+    }
+
+    .skill-name {
+        font-size: 1.75rem;
+    }
+
+    .awards-intro {
+        font-size: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .award-content {
+        height: 24rem;
+        width: 24rem;
+    }
+
+    .award-name {
+        font-size: 1.8rem;
+    }
+
+    .social-icon-wrapper img {
+        width: 5rem;
+    }
+
+    .section-header {
+        font-size: 4rem;
+    }
+
+    @-webkit-keyframes size-reducer {
+        to {
+            font-size: 4rem;
+            letter-spacing: 1.2rem;
+            opacity: 0;
+        }
+    }
+}
+
+@media (min-height: 750px) {
+    .educational-qualification-non-sticky-content .mac .code-block {
+        height: calc(100dvh - 11rem);
+    }
+}

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dont-blink-breakpoints.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="triangle"></div>
+        <div class="square"></div>
+        <div class="circle"></div>
+    </div>
+    <main>
+        <div id="intro" class="section">
+            <div class="container">
+                <div class="logo">
+                    D<span>;</span>
+                </div>
+                <div class="menu-icon" onclick="toggleMenuButton()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="hero">
+                    <div class="dont-blink-section">
+                    </div>
+
+                    <!-- Height is decided by logo's font-size*line-height + 2*margin of macbook mock div -->
+                    <div class="mac">
+                        <div class="mac-button-wrapper">
+                            <div class="mac-button">
+                            </div>
+                            <div class="mac-button">
+                            </div>
+                            <div class="mac-button">
+                            </div>
+                        </div>
+                        <!-- Height is calculated by macbook's close icon div height + 2*margin of code div + GOLIVE button height -->
+                        <div class="code-block">
+                            <div class="line-of-code">
+                                <span class="line-number">1</span>
+                                <span class="default-text">
+                                    &lt;!DOCTYPE html&gt;
+                                </span>
+                            </div>
+                            <div class="line-of-code">
+                                <span class="line-number">2</span>
+                                <span class="default-text">
+                                    &lt;html <span class="attribute-text">lang</span>="en"&gt;
+                                </span>
+                            </div>
+                            <div class="line-of-code">
+                                <span class="line-number">3</span>
+                                <span class="default-text">
+                                    &lt;head&gt;
+                                </span>
+                            </div>
+                            <div class="line-of-code">
+                                <span class="line-number">4</span>
+                                <span class="default-text ps-3">
+                                    &lt;meta <span class="attribute-text">charset</span>="UTF-8"&gt;
+                                </span>
+                            </div>
+                            <div class="line-of-code">
+                                <span class="line-number">5</span>
+                                <span class="default-text ps-3">
+                                    &lt;meta <span class="attribute-text">name</span>="viewport" <span
+                                        class="attribute-text">content</span>="width=device-width,
+                                    initial-scale=1.0"&gt;
+                                </span>
+                            </div>
+                            <div class="line-of-code">
+                                <span class="line-number">6</span>
+                                <span class="default-text ps-3">
+                                    &lt;title&gt;<span class="default-text-value">Portfolio</span>&lt;/title&gt;
+                                </span>
+                            </div>
+                            <div class="line-of-code">
+                                <span class="line-number">7</span>
+                                <span class="default-text">
+                                    &lt;/head&gt;
+                                </span>
+                            </div>
+                            <div class="line-of-code">
+                                <span class="line-number">8</span>
+                                <span class="default-text">
+                                    &lt;body&gt;
+                                </span>
+                            </div>
+                            <div class="line-of-code">
+                                <span class="line-number">9</span>
+                                <span class="default-text ps-3">
+                                    &lt;h1&gt;<span class="default-text-value">DEEPAK SINGH</span>
+                                </span>
+                                <span class="cursor-spot"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-indication-wrapper">
+                        <div class="scroll-indication">
+                            <div class="ball-wrapper">
+                                <div class="ball"></div>
+                            </div>
+                        </div>
+                        <div class="scroll-indication-text">
+                            SCROLL
+                        </div>
+                    </div>
+                    <div class="play-dont-blink-animation-wrapper" onclick="playDontBlinkAnimation();">
+                        <div class="play-dont-blink-animation-button">
+                            <span>P</span>
+                            <span>L</span>
+                            <span>A</span>
+                            <span>Y</span>
+                            <span>-</span>
+                            <span>T</span>
+                            <span>H</span>
+                            <span>A</span>
+                            <span>T</span>
+                            <span>-</span>
+                            <span>A</span>
+                            <span>G</span>
+                            <span>A</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>-</span>
+                        </div>
+                        <div class="play-icon">
+                            <span class="material-symbols-outlined">
+                                play_arrow
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-view">
+                <div class="container">
+                    <div class="menu-item-wrapper">
+                        <div>
+                            <div class="menu-item"><span onclick="scrollToElement('about')">ABOUT</span></div>
+                            <div class="menu-item"><span onclick="scrollToElement('education')">EDUCATION</span></div>
+                            <div class="menu-item"><span onclick="scrollToElement('skills-intro')">SKILLS</span></div>
+                            <div class="menu-item"><span onclick="scrollToElement('contact')">CONTACT</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="section">
+            <div class="container">
+                <div class="para-highlight hideY">
+                    <span>With </span><span>3 </span><span>years </span><span>of </span><span>experience </span><span>as
+                    </span><span>a </span><span>Software </span><span>Engineer, </span><span>I </span><span>have
+                    </span><span>been </span><span>successful </span><span>in </span><span>full-stack </span><span>app
+                    </span><span>development </span><span>using </span><span>Angular, </span><span>.Net,
+                    </span><span>SQL, </span><span>and </span><span>much </span><span>more. </span><span>Besides
+                    </span><span>that, </span><span>I </span><span>write </span><span>blogs, </span><span>and
+                    </span><span>talk </span><span>about </span><span>any </span><span>tech </span><span>stuff
+                    </span><span>that </span><span>I </span><span>learn. </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="work-experience" class="section">
+            <div class="container">
+                <div class="work-experience-wrapper">
+                    <div class="timeline">
+                        <img src="assets/car.svg" class="img-fluid car" />
+                        <div class="experience-lap">
+                            <div class="lap-row">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="lap-row">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="experience-lap">
+                            <div class="lap-row">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="lap-row">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="experience-lap">
+                            <div class="lap-row">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="lap-row">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-wrapper">
+                        <div class="experience">
+                            <div class="when">JUNE 2020</div>
+                            <div class="what">Junior Software Engineer</div>
+                            <div class="where">Kovai.co</div>
+                            <p class="how">
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                Lorem
+                                Ipsum
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                Lorem
+                                Ipsum
+                                Lorem Ipsum Lorem Ipsum
+                            </p>
+                        </div>
+                        <div class="experience">
+                            <div class="when">JUNE 2020</div>
+                            <div class="what">Junior Software Engineer</div>
+                            <div class="where">Kovai.co</div>
+                            <p class="how">
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                Lorem
+                                Ipsum
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                Lorem
+                                Ipsum
+                                Lorem Ipsum Lorem Ipsum
+                            </p>
+                        </div>
+                        <div class="experience">
+                            <div class="when">JUNE 2020</div>
+                            <div class="what">Junior Software Engineer</div>
+                            <div class="where">Kovai.co</div>
+                            <p class="how">
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                Lorem
+                                Ipsum
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                Lorem
+                                Ipsum
+                                Lorem Ipsum Lorem Ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="education" class="section">
+            <div class="container">
+                <div class="ed-intro">
+                    <div class="hideY"><span class="material-symbols-outlined">task_alt</span> TRY</div>
+                    <div class="hideY"><span class="material-symbols-outlined">task_alt</span> FAIL</div>
+                    <div class="hideY"><span class="material-symbols-outlined">task_alt</span> LEARN</div>
+                    <div class="hideY"><span class="material-symbols-outlined">task_alt</span> REPEAT UNTIL WIN.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="educational-qualification" class="section">
+            <div class="container">
+                <div class="educational-qualification-sticky-content">
+                    <div class="hideY">
+                        EDUCATIONAL
+                    </div>
+                    <div class="hideY">
+                        QUALIFICATION
+                    </div>
+                </div>
+                <div class="educational-qualification-non-sticky-content">
+                    <div class="mac">
+                        <div class="mac-button-wrapper">
+                            <div class="mac-button">
+                            </div>
+                            <div class="mac-button">
+                            </div>
+                            <div class="mac-button">
+                            </div>
+                        </div>
+                        <div class="code-block">
+                            <div id="ed-slide-0" class="slide">
+                                <div class="degree-wrapper">
+                                    <div class="slide-content-number">
+                                        /01
+                                    </div>
+                                    <div class="degree-name">
+                                        Bachelor of Engineering.
+                                    </div>
+                                    <div class="degree-stream">
+                                        <div>Computer Science and Engineering,</div>
+                                        <div>Sri Eshwar College of Engineering, Tamil Nadu, India.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="ed-slide-1" class="slide">
+                                <div class="row about-degree-wrapper">
+                                    <div class="col-4 about-degree-heading">
+                                        About.
+                                    </div>
+                                    <div class="col about-degree-point-wrapper">
+                                        <div class="about-degree-point">
+                                            🤩 Super exciting days right after my high school
+                                        </div>
+                                        <div class="about-degree-point">
+                                            🤯 Came to know what's web
+                                        </div>
+                                        <div class="about-degree-point">
+                                            😎 Built many cool mini-projects
+                                        </div>
+                                        <div class="about-degree-point">
+                                            🤓 Participated in tech contests, internships, and what not!
+                                        </div>
+                                        <div class="about-degree-point">
+                                            🙄 Named 'The Best student of the batch' - Yes, certainly unexpected
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="ed-slide-2" class="slide">
+                                <div class="project-wrapper">
+                                    <div class="project-heading">
+                                        Projects.
+                                    </div>
+                                    <div class="project-container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="project-number">
+                                                    1.
+                                                </div>
+                                                <div class="project-name">
+                                                    Twilio + Cliq
+                                                </div>
+                                                <div class="project-description">
+                                                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+                                                    Ipsum Lorem Ipsum Lorem Ipsum
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="project-number">
+                                                    2.
+                                                </div>
+                                                <div class="project-name">
+                                                    WeForUs
+                                                </div>
+                                                <div class="project-description">
+                                                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+                                                    Ipsum
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="project-number">
+                                                    3.
+                                                </div>
+                                                <div class="project-name">
+                                                    Feedback Analyst
+                                                </div>
+                                                <div class="project-description">
+                                                    Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="ed-slide-3" class="slide">
+                                <div class="degree-wrapper">
+                                    <div class="slide-content-number">
+                                        /02
+                                    </div>
+                                    <div class="degree-name">
+                                        Master of Science.
+                                    </div>
+                                    <div class="degree-stream">
+                                        <div>Software Design with Cloud Native Computing,</div>
+                                        <div>
+                                            Technological University of the Shannon: Midlands Midwest, Athlone, Ireland.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="ed-slide-4" class="slide">
+                                <div class="education-summary">
+                                    <div class="heading">
+                                        <div class="slide-content-number">
+                                            /03
+                                        </div>
+                                        <div>
+                                            Summary.
+                                        </div>
+                                    </div>
+                                    <div class="summary-wrapper">
+                                        <div class="row m-0">
+                                            <div class="col-5 col-md-3 summary-content">
+                                                <div class="summary-number">
+                                                    2
+                                                </div>
+                                                <div class="summary-heading">
+                                                    Courses
+                                                </div>
+                                            </div>
+
+                                            <div class="col-5 col-md-3 summary-content">
+                                                <div class="summary-number">
+                                                    5
+                                                </div>
+                                                <div class="summary-heading">
+                                                    Projects
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0">
+                                            <div class="col-5 col-md-3 summary-content">
+                                                <div class="summary-number">
+                                                    10
+                                                </div>
+                                                <div class="summary-heading">
+                                                    Certifications
+                                                </div>
+                                            </div>
+
+                                            <div class="col-5 col-md-3 summary-content">
+                                                <div class="summary-number">
+                                                    4
+                                                </div>
+                                                <div class="summary-heading">
+                                                    Awards
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="ed-slide-5" class="slide">
+                                <div class="education-slide-end">
+                                    <div class="slide-content-number">
+                                        /04
+                                    </div>
+                                    <div class="end-card">
+                                        Thank you.
+                                    </div>
+                                    <div class="message">
+                                        <div>I am so glad to have you gone through my educational qualification. Please
+                                            scroll down to explore more.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="screen-swiper">
+                            <div class="screen-swiper-button-wrapper" style="display: none;">
+                                <span class="material-symbols-outlined" onClick="swipeSlide(0)">arrow_circle_left</span>
+                                <span class="material-symbols-outlined"
+                                    onClick="swipeSlide(1)">arrow_circle_right</span>
+                            </div>
+                            <div class="screen-swiper-info">
+                                Swipe right or left to view other slides
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills-intro" class="section">
+            <div class="container">
+                <div class="skills-intro">
+                    <div>WHAT</div>
+                    <div>
+                        <span>DO</span>
+                        <span> I</span>
+                    </div>
+                    <div style="color: indianred;">KNOW?</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills">
+            <div class="horizontal-view-sticky-viewport">
+                <div class="container">
+                    <div class="skill-type-wrapper">
+                        <div class="skill-type" id="front-end-skills-heading">
+                            <span class="hashtag">FRONT</span>
+                            <span>END</span>
+                        </div>
+                        <div class="skill-type" id="back-end-skills-heading" style="transform: translateY(100%)">
+                            <span class="hashtag">BACK</span>
+                            <span>END</span>
+                        </div>
+                        <div class="skill-type" id="other-skills-heading" style="transform: translateY(100%)">
+                            <span class="hashtag">OTHER</span>
+                            <span>TOOLS & TECH</span>
+                        </div>
+                        <div class="skill-type-indication">
+                            <span class="material-symbols-outlined">
+                                arrow_downward
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-view-element-wrapper">
+                    <div class="horizontal-view-element">
+                        <img src="assets/html.svg" class="img-fluid">
+                        <div class="skill-name">
+                            HTML
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/css.svg" class="img-fluid">
+                        <div class="skill-name">
+                            CSS
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/javascript.svg" class="img-fluid">
+                        <div class="skill-name">
+                            JavaScript
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/angular.svg" class="img-fluid">
+                        <div class="skill-name">
+                            Angular
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/bootstrap.svg" class="img-fluid">
+                        <div class="skill-name">
+                            Bootstrap
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/sass.svg" class="img-fluid">
+                        <div class="skill-name">
+                            Sass
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element" id="back-end-skills-start">
+                        <img src="assets/c-sharp.svg" class="img-fluid">
+                        <div class="skill-name">
+                            C#
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/java.svg" class="img-fluid">
+                        <div class="skill-name">
+                            Java
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/php.svg" class="img-fluid">
+                        <div class="skill-name">
+                            PHP
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/python.svg" class="img-fluid">
+                        <div class="skill-name">
+                            Python
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element" id="other-skills-start">
+                        <img src="assets/mysql.svg" class="img-fluid">
+                        <div class="skill-name">
+                            SQL
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/azure.svg" class="img-fluid">
+                        <div class="skill-name">
+                            Microsoft Azure
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/git.svg" class="img-fluid">
+                        <div class="skill-name">
+                            Git
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/github.svg" class="img-fluid">
+                        <div class="skill-name">
+                            GitHub
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="awards" class="section">
+            <div class="container">
+                <div class="awards-wrapper">
+                    <div class="awards-intro">
+                        <div class="text-stroke-wrapper hideY">
+                            <span class="text-stroke-real">A FEW AWARDS</span>
+                            <span class="text-stroke-duplicate">A FEW AWARDS</span>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-lg-4 pb-3 hideY award-column">
+                            <div class="award-content">
+                                <div class="award-name">
+                                    Honourable mention
+                                </div>
+                                <div class="award-description">
+                                    At Zoho's bot development contest
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 pb-3 hideY award-column">
+                            <div class="award-content">
+                                <div class="award-name">
+                                    Project expo winner
+                                </div>
+                                <div class="award-description">
+                                    For three consecutive years during my bachelor's
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 pb-3 hideY award-column">
+                            <div class="award-content">
+                                <div class="award-name">
+                                    Presentation winner
+                                </div>
+                                <div class="award-description">
+                                    At several technical symposiums of various universities
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="card linkedin">
+                        <div class="card-body">
+                            <div class="header">
+                                <div>
+                                    <img src="assets/profile-picture.png" class="img-fluid">
+                                </div>
+                                <div class="header-text-wrapper">
+                                    <div class="linkedin-name">
+                                        Deepak Mohan Singh
+                                    </div>
+                                    <div class="linkedin-role">
+                                        Software Engineer
+                                    </div>
+                                    <div class="linkedin-time">Just now
+                                        <span class="material-symbols-outlined">public</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="linkedin-post">
+                                Not just these! I share all my work experience, rewards and recognitions on LinkedIn.
+                                Yes, <span class="hashtag">#LetUsConnect!</span>
+                            </div>
+                            <div class="mt-3">
+                                <a href="https://in.linkedin.com/in/deepakmohansingh" target="_blank">
+                                    <button type="button" class="btn btn-primary px-4">
+                                        Connect
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-icon-wrapper">
+                        <div>
+                            <a href="https://github.com/DeepakMohanSingh" target="_blank">
+                                <img src="assets/github-social.svg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://deepakmohansingh.medium.com" target="_blank">
+                                <img src="assets/medium.svg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/ImDeepakMohan" target="_blank">
+                                <img src="assets/twitterx.svg" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center timer">
+                        <div>
+                            Thank you for your time :&#41;
+                        </div>
+                        <div id="alive-time"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>Handcrafted by me using HTML, CSS, Vanilla Javascript and <a href="https://getbootstrap.com"
+                    target="_blank">Bootstrap</a></div>
+            <div>Icons by <a href="https://icons8.com" target="_blank">Icons8</a> and <a
+                    href="https://fonts.google.com/icons" target="_blank">Google</a></div>
+            <div>Images from <a href="https://unsplash.com" target="_blank">Unsplash</a> and <a
+                    href="https://freesvg.org" target="_blank">FreeSVG</a></div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/handler.js"></script>
+    <script>history.scrollRestoration = "manual"</script>
+</body>
+
+</html>
