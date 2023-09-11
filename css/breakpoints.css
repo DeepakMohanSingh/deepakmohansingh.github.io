@@ -3,20 +3,8 @@
         left: 0;
     }
 
-    /* .menu-icon {
-        right: 0;
-    } */
-
     .menu-item-wrapper {
         font-size: 4.5rem;
-    }
-
-    .hero-main {
-        font-size: 2.8rem;
-    }
-
-    .hero-sub {
-        font-size: 1.4rem;
     }
 
     .menu-icon {
@@ -35,17 +23,6 @@
 
     .menu-icon div:nth-child(3) {
         top: calc(50% + 0.38rem);
-    }
-
-    .hero .name {
-        font-weight: 500;
-        padding-bottom: 1rem;
-    }
-
-    .hero .role .role-1,
-    .hero .role .role-2 {
-        font-size: 5rem;
-        -webkit-text-stroke: 3px var(--color);
     }
 
     .scroll-indication-text {
@@ -95,18 +72,6 @@
         font-size: 3.25rem;
     }
 
-    /* .educational-qualification-non-sticky-content .mac .code-block .slide {
-        padding: 0.8rem;
-    }
-
-    .educational-qualification-non-sticky-content .mac .code-block .slide-heading {
-        font-size: 2.45rem;
-    }
-
-    .educational-qualification-non-sticky-content .mac .code-block .course-heading {
-        font-size: 1.4rem;
-    } */
-
     .educational-qualification-non-sticky-content .mac .screen-swiper .screen-swiper-info {
         font-size: 0.8rem;
     }
@@ -136,18 +101,6 @@
 
     .social-icon-wrapper img {
         width: 4rem;
-    }
-
-    .section-header {
-        font-size: 2.5rem;
-    }
-
-    @-webkit-keyframes size-reducer {
-        to {
-            font-size: 2.6rem;
-            letter-spacing: 0.6rem;
-            opacity: 0;
-        }
     }
 }
 
@@ -197,16 +150,6 @@
     .mac {
         margin-top: 3rem;
         height: calc(100% - ((2.5rem * 1.5) + 3rem));
-    }
-
-    .hero .name {
-        font-size: 6rem;
-        padding-bottom: 0.8rem;
-    }
-
-    .hero .role .role-1,
-    .hero .role .role-2 {
-        font-size: 6rem;
     }
 
     .scroll-indication {
@@ -323,14 +266,6 @@
         font-size: 2rem;
     }
 
-    .skill-heading {
-        font-size: 2rem;
-    }
-
-    .skill-heading .material-symbols-outlined {
-        font-size: 2.25rem;
-    }
-
     .skill-name {
         font-size: 1.45rem;
     }
@@ -362,18 +297,6 @@
 
     .linkedin-post {
         font-size: 1.25rem;
-    }
-
-    .section-header {
-        font-size: 3rem;
-    }
-
-    @-webkit-keyframes size-reducer {
-        to {
-            font-size: 2.8rem;
-            letter-spacing: 0.8rem;
-            opacity: 0;
-        }
     }
 
     @-webkit-keyframes scroll-down {
@@ -447,20 +370,6 @@
         height: 1.6rem;
     }
 
-    .hero .name {
-        font-size: 7.5rem;
-        padding-bottom: 0.5rem;
-    }
-
-    .hero .role {
-        padding-bottom: 0;
-    }
-
-    .hero .role .role-1,
-    .hero .role .role-2 {
-        font-size: 7.5rem;
-    }
-
     .para-highlight {
         font-size: 2.5rem;
     }
@@ -508,18 +417,6 @@
         font-size: 1.55rem;
     }
 
-    /* .educational-qualification-non-sticky-content .mac .code-block .slide {
-        padding: 1.2rem;
-    }
-
-    .educational-qualification-non-sticky-content .mac .code-block .slide-heading {
-        font-size: 3.85rem;
-    }
-
-    .educational-qualification-non-sticky-content .mac .code-block .course-heading {
-        font-size: 1.6rem;
-    } */
-
     .about-degree-point-wrapper {
         font-size: 1.4rem;
     }
@@ -565,22 +462,6 @@
     .social-icon-wrapper img {
         width: 4.5rem;
     }
-
-    .section-header {
-        font-size: 3.5rem;
-    }
-
-    .section-header .underline-animation {
-        height: 0.3rem;
-    }
-
-    @-webkit-keyframes size-reducer {
-        to {
-            font-size: 3rem;
-            letter-spacing: 0.9rem;
-            opacity: 0;
-        }
-    }
 }
 
 @media (min-width: 1200px) {
@@ -601,15 +482,6 @@
 
     .mac .code-block .line-of-code .cursor-spot {
         height: 1.75rem;
-    }
-
-    .hero .name {
-        font-size: 8.8rem;
-    }
-
-    .hero .role .role-1,
-    .hero .role .role-2 {
-        font-size: 8.8rem;
     }
 
     .scroll-indication {
@@ -699,18 +571,6 @@
         font-size: 1.5rem;
     }
 
-    /* .educational-qualification-non-sticky-content .mac .code-block .slide {
-        padding: 1.5rem;
-    }
-
-    .educational-qualification-non-sticky-content .mac .code-block .slide-heading {
-        font-size: 4.3rem;
-    }
-
-    .educational-qualification-non-sticky-content .mac .code-block .course-heading {
-        font-size: 1.7rem;
-    } */
-
     .educational-qualification-non-sticky-content .mac .code-block .slide-point-wrapper .slide-point {
         font-size: 1.3rem;
     }
@@ -741,14 +601,6 @@
         font-size: 3rem;
     }
 
-    .skill-heading {
-        font-size: 2.3rem;
-    }
-
-    .skill-heading .material-symbols-outlined {
-        font-size: 2.55rem;
-    }
-
     .skill-name {
         font-size: 1.55rem;
     }
@@ -767,20 +619,8 @@
         font-size: 1.6rem;
     }
 
-    .section-header {
-        font-size: 3.8rem;
-    }
-
     .text-stroke-real {
         -webkit-text-stroke: 3px var(--color);
-    }
-
-    @-webkit-keyframes size-reducer {
-        to {
-            font-size: 3.5rem;
-            letter-spacing: 1rem;
-            opacity: 0;
-        }
     }
 
     @-webkit-keyframes scroll-down {
@@ -856,15 +696,6 @@
     .mac {
         margin-top: 4rem;
         height: calc(100% - ((3.5rem * 1.5) + 4rem));
-    }
-
-    .hero .name {
-        font-size: 11rem;
-    }
-
-    .hero .role .role-1,
-    .hero .role .role-2 {
-        font-size: 10rem;
     }
 
     .para-highlight {
@@ -985,14 +816,6 @@
         font-size: 4rem;
     }
 
-    .skill-heading {
-        font-size: 2.5rem;
-    }
-
-    .skill-heading .material-symbols-outlined {
-        font-size: 2.75rem;
-    }
-
     .skill-name {
         font-size: 1.75rem;
     }
@@ -1013,18 +836,6 @@
 
     .social-icon-wrapper img {
         width: 5rem;
-    }
-
-    .section-header {
-        font-size: 4rem;
-    }
-
-    @-webkit-keyframes size-reducer {
-        to {
-            font-size: 4rem;
-            letter-spacing: 1.2rem;
-            opacity: 0;
-        }
     }
 }
 

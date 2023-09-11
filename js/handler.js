@@ -96,7 +96,7 @@ function changeDontBlinkSectionBackgroundColor() {
 }
 
 function dontBlinkAnimationListener() {
-    if (dontBlinkIndex < dontBlinkContent.length && (!dontBlinkContent[dontBlinkIndex].append))
+    if (dontBlinkIndex == dontBlinkContent.length || (!dontBlinkContent[dontBlinkIndex].append))
         dontBlinkSection.textContent = '';
     dontBlinkSection.classList.remove(dontBlinkSection.classList[dontBlinkSection.classList.length - 1]);
     setTimeout(startDontBlinkAnimation, 10);
