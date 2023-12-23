@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
@@ -104,7 +107,7 @@
                             <div class="line-of-code">
                                 <span class="line-number">9</span>
                                 <span class="default-text ps-3">
-                                    &lt;h1&gt;<span class="default-text-value">DEEPAK SINGH</span>
+                                    &lt;h1&gt;<span class="default-text-value">DEEPAK</span>
                                 </span>
                                 <span class="cursor-spot"></span>
                             </div>
@@ -293,6 +296,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="section-blank-separator">
         </div>
 
         <div id="education" class="section">
@@ -530,7 +536,7 @@
                         <span>DO</span>
                         <span> I</span>
                     </div>
-                    <div style="color: indianred;">KNOW?</div>
+                    <div>KNOW?</div>
                 </div>
             </div>
         </div>
@@ -632,6 +638,12 @@
                         </div>
                     </div>
                     <div class="horizontal-view-element">
+                        <img src="assets/docker.svg" class="img-fluid">
+                        <div class="skill-name">
+                            Docker
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
                         <img src="assets/git.svg" class="img-fluid">
                         <div class="skill-name">
                             Git
@@ -647,13 +659,87 @@
             </div>
         </div>
 
+        <div id="talks" class="section">
+            <div class="container">
+                <div class="talks-wrapper">
+                    <div class="text-stroke-intro">
+                        <div class="text-stroke-wrapper hideY">
+                            <span class="text-stroke-real">TALKS</span>
+                            <span class="text-stroke-duplicate">TALKS</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center pb-5">
+                        <div class="talk-pic-wrapper hideY">
+                            <img src="assets/speaker.jpeg" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-10 col-md-7 talk-details-wrapper hideY">
+                            <div class="row talk-details">
+                                <div class="col-9">
+                                    <div class="talk-topic">
+                                        Azure Storage
+                                    </div>
+                                    <div class="talk-event">
+                                        One Day Workshop on Azure Platform
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    2022
+                                </div>
+                            </div>
+                            <div class="row talk-details">
+                                <div class="col-9">
+                                    <div class="talk-topic">
+                                        Trends and practices in cloud computing using Microsoft Azure
+                                    </div>
+                                    <div class="talk-event">
+                                        Sri Eshwar College of Engineering
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    2022
+                                </div>
+                            </div>
+                            <div class="row talk-details">
+                                <div class="col-9">
+                                    <div class="talk-topic">
+                                        Build, deploy and monitor your first Azure Function
+                                    </div>
+                                    <div class="talk-event">
+                                        Global Azure Bootcamp
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    2022
+                                </div>
+                            </div>
+                            <div class="row talk-details">
+                                <div class="col-9">
+                                    <div class="talk-topic">
+                                        Serverless Intro: Using Azure Functions
+                                    </div>
+                                    <div class="talk-event">
+                                        Global Azure Bootcamp
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="awards" class="section">
             <div class="container">
                 <div class="awards-wrapper">
-                    <div class="awards-intro">
+                    <div class="text-stroke-intro">
                         <div class="text-stroke-wrapper hideY">
-                            <span class="text-stroke-real">A FEW AWARDS</span>
-                            <span class="text-stroke-duplicate">A FEW AWARDS</span>
+                            <span class="text-stroke-real">AWARDS</span>
+                            <span class="text-stroke-duplicate">AWARDS</span>
                         </div>
                     </div>
                     <div class="row pt-2">
@@ -727,29 +813,84 @@
                         </div>
                     </div>
 
-                    <div class="social-icon-wrapper">
-                        <div>
-                            <a href="https://github.com/DeepakMohanSingh" target="_blank">
-                                <img src="assets/github-social.svg" class="img-fluid">
-                            </a>
+                    <div class="social-icon-wrapper row m-1">
+                        <div class="social-icon col-md m-2">
+                            <div>
+                                <a href="https://github.com/DeepakMohanSingh" target="_blank">
+                                    <img src="assets/github-social.svg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="social-icon-heading">
+                                Projects
+                            </div>
+                            <div class="social-icon-description">
+                                I publish personal projects and contribute to the resolution of other projects through
+                                code or reporting issues on GitHub.
+                            </div>
+                            <div class="social-icon-link">
+                                <a href="https://github.com/DeepakMohanSingh" target="_blank">
+                                    View profile
+                                    <span class="material-symbols-outlined">
+                                        north_east
+                                    </span>
+                                </a>
+                            </div>
                         </div>
-                        <div>
-                            <a href="https://deepakmohansingh.medium.com" target="_blank">
-                                <img src="assets/medium.svg" class="img-fluid">
-                            </a>
+                        <div class="social-icon col-md m-2">
+                            <div>
+                                <a href="https://deepakmohansingh.medium.com" target="_blank">
+                                    <img src="assets/medium.svg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="social-icon-heading">
+                                Blogging
+                            </div>
+                            <div class="social-icon-description">
+                                I write blogs at medium.com about interesting topics I come through while developing
+                                applications.
+                            </div>
+                            <div class="social-icon-link">
+                                <a href="https://deepakmohansingh.medium.com" target="_blank">
+                                    Read
+                                    <span class="material-symbols-outlined">
+                                        north_east
+                                    </span>
+                                </a>
+                            </div>
                         </div>
-                        <div>
-                            <a href="https://twitter.com/ImDeepakMohan" target="_blank">
-                                <img src="assets/twitterx.svg" class="img-fluid">
-                            </a>
+                        <div class="social-icon col-md m-2">
+                            <div>
+                                <a href="hhttps://stackoverflow.com/users/10403902/deepak" target="_blank">
+                                    <img src="assets/stackoverflow.svg" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="social-icon-heading">
+                                Contribution
+                            </div>
+                            <div class="social-icon-description">
+                                I write answers in Stackoverflow solving programming problems faced by other developers.
+                            </div>
+                            <div class="social-icon-link">
+                                <a href="https://stackoverflow.com/users/10403902/deepak" target="_blank">
+                                    View profile
+                                    <span class="material-symbols-outlined">
+                                        north_east
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="text-center timer">
                         <div>
-                            Thank you for your time :&#41;
+                            Thank you for your
                         </div>
-                        <div id="alive-time"></div>
+                        <div class="d-flex justify-content-center">
+                            <div id="alive-time"></div>
+                            <div>
+                                ❤️
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

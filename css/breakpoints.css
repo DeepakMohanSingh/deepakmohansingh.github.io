@@ -89,7 +89,7 @@
         font-size: 1.5rem;
     }
 
-    .awards-intro {
+    .text-stroke-intro {
         font-size: 4rem;
         margin-bottom: 1.2rem;
     }
@@ -101,6 +101,22 @@
 
     .social-icon-wrapper img {
         width: 4rem;
+    }
+
+    .social-icon-wrapper .social-icon .social-icon-heading {
+        font-size: 1.5rem;
+    }
+    
+    .social-icon-wrapper .social-icon .social-icon-description {
+        font-size: 1.15rem;
+    }
+    
+    .social-icon-wrapper .social-icon .social-icon-link {
+        font-size: 1.15rem;
+    }
+    
+    .social-icon-wrapper .social-icon .material-symbols-outlined {
+        font-size: 1.15rem;
     }
 }
 
@@ -164,6 +180,22 @@
 
     .para-highlight {
         font-size: 2.38rem;
+    }
+
+    .experience .when {
+        font-size: 0.9rem;
+    }
+    
+    .experience .what {
+        font-size: 1.38rem;
+    }
+    
+    .experience .where {
+        font-size: 1.25rem;
+    }
+
+    .experience .how {
+        font-size: 1.2rem;
     }
 
     #education .container .ed-intro div {
@@ -270,7 +302,7 @@
         font-size: 1.45rem;
     }
 
-    .awards-intro {
+    .text-stroke-intro {
         font-size: 5.2rem;
         margin-bottom: 1.3rem;
     }
@@ -450,9 +482,21 @@
         font-size: 8rem;
     }
 
-    .awards-intro {
+    .text-stroke-intro {
         font-size: 7.2rem;
         margin-bottom: 1.5rem;
+    }
+
+    .talk-pic-wrapper {
+        width: 35%;
+    }
+
+    .talk-details {
+        font-size: 1.15rem;
+    }
+    
+    .talk-details .talk-topic {
+        font-size: 1.3rem;
     }
 
     .linkedin {
@@ -605,7 +649,7 @@
         font-size: 1.55rem;
     }
 
-    .awards-intro {
+    .text-stroke-intro {
         font-size: 9rem;
         margin-bottom: 1.8rem;
     }
@@ -820,7 +864,7 @@
         font-size: 1.75rem;
     }
 
-    .awards-intro {
+    .text-stroke-intro {
         font-size: 10rem;
         margin-bottom: 2rem;
     }

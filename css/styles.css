@@ -73,6 +73,10 @@ main {
     justify-content: center;
 }
 
+.section-blank-separator {
+    height: 50%;
+}
+
 .container {
     height: 100%;
     position: relative;
@@ -85,6 +89,7 @@ main {
 #about.section,
 #work-experience.section,
 #educational-qualification.section,
+#talks.section,
 #awards.section,
 #skills .container {
     height: auto;
@@ -361,8 +366,10 @@ main {
 /* About */
 
 .para-highlight {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.45;
+    font-weight: 700;
     font-size: 1.75rem;
-    font-weight: 500;
     padding: 1rem;
     color: var(--color__faded);
     letter-spacing: -0.01rem;
@@ -471,14 +478,14 @@ main {
 }
 
 .experience .what {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.25;
     padding-top: 0.25rem;
 }
 
 .experience .where {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     line-height: 1.25;
     padding-top: 0.25rem;
 }
@@ -490,7 +497,8 @@ main {
 /* Education */
 
 #education .container .ed-intro div {
-    font-size: 1.8rem;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.7rem;
     font-weight: 800;
     font-style: italic;
     line-height: 1.3;
@@ -807,6 +815,7 @@ main {
 /* Skills */
 
 .skills-intro {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 4.25rem;
     font-weight: 900;
     line-height: 0.85;
@@ -830,6 +839,7 @@ main {
 .skills-intro div:nth-child(3) {
     position: relative;
     left: 100%;
+    color: var(--color__important_word);
 }
 
 .skills-intro-animation div:nth-child(1),
@@ -874,8 +884,11 @@ main {
     justify-content: center;
     height: 15rem;
     width: 15rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 10px;
     margin-right: 2rem;
+    background: white;
+    border: 1rem solid white;
+    border-radius: 1.75rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .horizontal-view-element img {
@@ -906,10 +919,6 @@ main {
     align-items: center;
 }
 
-.skill-type .hashtag {
-    color: var(--color__important_word);
-}
-
 .skill-type-wrapper .material-symbols-outlined {
     font-size: 1.15rem;
     vertical-align: middle;
@@ -920,19 +929,46 @@ main {
     font-weight: 500;
 }
 
+/* Talks */
+
+.talks-wrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.talk-pic-wrapper {
+    width: 60%;
+    border: 0.5rem solid;
+    box-shadow: 0.75rem 0.75rem darkgrey;
+}
+
+.talk-details-wrapper div:last-child {
+    border-bottom: none !important;
+}
+
+.talk-details {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color__faded__secondary);
+    line-height: 1.25;
+}
+
+.talk-details .talk-topic {
+    font-weight: 500;
+    padding-bottom: 0.4rem;
+}
+
+.talk-details .talk-event {
+    color: var(--color__faded__secondary);
+}
+
 /* Awards */
 
 .awards-wrapper {
     width: 100%;
     margin-bottom: 2rem;
-}
-
-.awards-intro {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1.125;
-    text-align: center;
-    margin-bottom: 1rem;
 }
 
 .award-column {
@@ -1033,10 +1069,38 @@ main {
 }
 
 .social-icon-wrapper {
-    display: flex;
-    align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+}
+
+.social-icon-wrapper .social-icon {
+    padding: 2rem;
+    background: white;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.social-icon-wrapper .social-icon .social-icon-heading {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.social-icon-wrapper .social-icon .social-icon-description {
+    margin-top: 0.75rem;
+}
+
+.social-icon-wrapper .social-icon .social-icon-link {
+    margin-top: 0.5rem;
+    color: #0a66c2;
+}
+
+.social-icon-wrapper .social-icon .social-icon-link a {
+    text-decoration: none;
+}
+
+.social-icon-wrapper .social-icon .material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 1rem;
 }
 
 .social-icon-wrapper img {
@@ -1071,6 +1135,14 @@ main {
 }
 
 /* General/Helper */
+
+.text-stroke-intro {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.125;
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
 .text-stroke-wrapper {
     display: inline-block;

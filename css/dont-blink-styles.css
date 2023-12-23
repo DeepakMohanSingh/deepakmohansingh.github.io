@@ -9,7 +9,9 @@
 }
 
 .dont-blink-section.glitch-intro-text {
-    font-size: 2.75rem;
+    font-size: 5rem;
+    letter-spacing: -0.38rem;
+    font-weight: 600;
     animation: glitch-intro-text 2s forwards;
 }
 
