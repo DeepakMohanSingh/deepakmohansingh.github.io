@@ -1,6 +1,6 @@
 .dont-blink-section {
-    --dont-blink-font-size: 2.1rem;
-    --dont-blink-big-text-font-size: 5rem;
+    --dont-blink-font-size: 2rem;
+    --dont-blink-big-text-font-size: 5.5rem;
     line-height: 1;
     display: none;
     font-size: var(--dont-blink-font-size);
