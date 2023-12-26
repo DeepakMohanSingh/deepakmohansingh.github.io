@@ -36,9 +36,9 @@ main {
     width: 0;
     height: 0;
     border-top: 0;
-    border-bottom: 30px solid var(--background-color__secondary);
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
+    border-bottom: 40px solid var(--background-color__secondary);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
     animation: preloader 800ms 0s infinite;
     -o-animation: preloader 800ms 0s infinite;
     -moz-animation: preloader 800ms 0s infinite;
@@ -46,8 +46,8 @@ main {
 }
 
 .preloader .square {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: var(--background-color__secondary);
     animation: preloader 800ms 266.666ms infinite;
     -o-animation: preloader 800ms 266.666ms infinite;
@@ -56,8 +56,8 @@ main {
 }
 
 .preloader .circle {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: var(--background-color__secondary);
     border-radius: 50%;
     animation: preloader 800ms 533.333ms infinite;
