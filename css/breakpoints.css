@@ -46,12 +46,8 @@
         height: 0.45rem;
     }
 
-    #education .container .ed-intro div {
-        font-size: 2.5rem;
-    }
-
-    #education .container .ed-intro div .material-symbols-outlined {
-        font-size: 2.5rem;
+    #education .container .ed-intro {
+        font-size: 3rem;
     }
 
     .educational-qualification-sticky-content {
@@ -198,12 +194,8 @@
         font-size: 1.2rem;
     }
 
-    #education .container .ed-intro div {
-        font-size: 3.2rem;
-    }
-
-    #education .container .ed-intro div .material-symbols-outlined {
-        font-size: 3.2rem;
+    #education .container .ed-intro {
+        font-size: 3.75rem;
     }
 
     .educational-qualification-sticky-content {
@@ -414,12 +406,8 @@
         margin: 1.25rem;
     }
 
-    #education .container .ed-intro div {
-        font-size: 3.8rem;
-    }
-
-    #education .container .ed-intro div .material-symbols-outlined {
-        font-size: 3.8rem;
+    #education .container .ed-intro {
+        font-size: 4.2rem;
     }
 
     .educational-qualification-sticky-content {
@@ -550,12 +538,8 @@
         margin: 1.4rem;
     }
 
-    #education .container .ed-intro div {
-        font-size: 4.2rem;
-    }
-
-    #education .container .ed-intro div .material-symbols-outlined {
-        font-size: 4.2rem;
+    #education .container .ed-intro {
+        font-size: 4.6rem;
     }
 
     .educational-qualification-sticky-content {
@@ -754,12 +738,8 @@
         margin: 1.5rem;
     }
 
-    #education .container .ed-intro div {
-        font-size: 4.75rem;
-    }
-
-    #education .container .ed-intro div .material-symbols-outlined {
-        font-size: 4.75rem;
+    #education .container .ed-intro {
+        font-size: 5.1rem;
     }
 
     .educational-qualification-sticky-content {
