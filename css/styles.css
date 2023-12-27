@@ -492,6 +492,26 @@ main {
 
 .experience .how {
     padding-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.experience .with {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.experience .with .pitstop {
+    display: flex;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    background: rgb(221, 221, 221);
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.experience .with .pitstop img {
+    width: 1rem;
+    margin-right: 0.25rem;
 }
 
 /* Education */
@@ -779,6 +799,11 @@ main {
     line-height: 0.85;
     letter-spacing: -2px;
     padding: 1rem;
+}
+
+.education-slide-end .end-card span:last-child {
+    text-decoration: line-through;
+    text-decoration-color: var(--color__important_word);
 }
 
 .education-slide-end .message {
