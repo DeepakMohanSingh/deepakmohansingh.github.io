@@ -1,5 +1,3 @@
-initialSlice = true
-
 function onLoadHandler() {
     let preloader = document.querySelector('.preloader');
     preloader.querySelector('.triangle').style.display = "none";
@@ -249,6 +247,7 @@ function animateSkillSectionIntro() {
     }
 }
 
+initialSlice = true
 function animateSkillSectionInitialHeading() {
     let element = document.getElementById('front-end-skills-heading');
     if (initialSlice && element.getBoundingClientRect().top <= (window.innerHeight / 100 * 50)) {

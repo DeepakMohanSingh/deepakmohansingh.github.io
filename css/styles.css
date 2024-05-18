@@ -130,6 +130,9 @@ main {
     cursor: pointer;
     vertical-align: baseline;
     transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
 }
 
 .menu-icon div {
@@ -168,6 +171,9 @@ main {
     width: 100%;
     opacity: 0.98;
     transition: left 0.5s ease-in;
+    -webkit-transition: left 0.5s ease-in;
+    -moz-transition: left 0.5s ease-in;
+    -o-transition: left 0.5s ease-in;
 }
 
 .menu-item-wrapper {
@@ -245,17 +251,32 @@ main {
 }
 
 .mac .code-block .line-of-code {
+    font-family: Menlo, Monaco, 'Courier New', monospace;
     width: 0%;
     overflow: hidden;
 }
 
 .mac .code-block .line-of-code .line-number {
-    color: grey;
+    color: rgb(93, 93, 93);
     padding-inline: 0.5rem;
 }
 
-.mac .code-block .line-of-code .default-text {
-    color: #74c3ff;
+.mac .code-block .line-of-code .tag-border {
+    color: rgb(93, 93, 93);
+}
+
+.mac .code-block .line-of-code .tag {
+    color: #569CD6;
+}
+
+.mac .code-block,
+.line-of-code .attribute {
+    color: #9CDCFE;
+}
+
+.mac .code-block,
+.line-of-code .attribute-value {
+    color: #cc886d;
 }
 
 .mac .code-block .line-of-code .default-text-value {
@@ -279,6 +300,9 @@ main {
 .scroll-indication-wrapper {
     opacity: 0;
     transition: opacity 0.2s linear;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -335,6 +359,9 @@ main {
 .play-dont-blink-animation-wrapper .play-dont-blink-animation-button {
     position: relative;
     transition: opacity 0.2s linear 0.5s, transform 2s;
+    -webkit-transition: opacity 0.2s linear 0.5s, transform 2s;
+    -moz-transition: opacity 0.2s linear 0.5s, transform 2s;
+    -o-transition: opacity 0.2s linear 0.5s, transform 2s;
     height: 10rem;
     width: 10rem;
     animation: rotate 10s linear infinite;
@@ -376,6 +403,9 @@ main {
 
 .para-highlight span {
     transition: color 0.2s linear;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
 }
 
 /* Work */
@@ -544,7 +574,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2.125rem;
+    font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.2;
 }
@@ -859,6 +889,9 @@ main {
 
 .skills-intro div {
     transition: 1.5s ease-out;
+    -webkit-transition: 1.5s ease-out;
+    -moz-transition: 1.5s ease-out;
+    -o-transition: 1.5s ease-out;
 }
 
 .skills-intro div:nth-child(1) {
@@ -945,6 +978,9 @@ main {
     position: absolute;
     left: 0;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     font-family: 'Antonio';
     text-transform: uppercase;
     width: fit-content;
@@ -963,6 +999,9 @@ main {
     overflow: hidden;
     text-shadow: 0 0 2.5px var(--color__important_word);
     transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
     animation: sliced-half 150ms forwards 0.62s ease-in-out;
 }
 
@@ -972,10 +1011,13 @@ main {
     width: 0%;
     position: absolute;
     z-index: 999;
-    top: 60%;
+    top: 62%;
     left: 0;
     transform: translateY(-50%);
     transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
     background: var(--background-color);
     animation: slice 300ms forwards 0.35s ease-in-out;
     background: rgb(0, 171, 0);
@@ -1349,6 +1391,9 @@ main {
     -moz-transform: translateY(0px);
     -webkit-transform: translateY(0px);
     transition: transform 1s ease, opacity 1s ease;
+    -webkit-transition: transform 1s ease, opacity 1s ease;
+    -moz-transition: transform 1s ease, opacity 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease;
     opacity: 1;
 }
 

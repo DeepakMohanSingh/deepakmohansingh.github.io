@@ -567,7 +567,7 @@
     }
 
     .mac .code-block .line-of-code .cursor-spot {
-        height: 1.6rem;
+        height: 1.56rem;
     }
 
     .para-highlight {
@@ -695,7 +695,7 @@
     }
 
     .mac .code-block .line-of-code .cursor-spot {
-        height: 1.75rem;
+        height: 1.55rem;
     }
 
     .scroll-indication {
@@ -810,7 +810,7 @@
     }
 
     .slice::after {
-        height: 2.35px;
+        height: 2.38px;
         top: 60%;
     }
 
@@ -1166,7 +1166,7 @@
     }
 
     .slice::after {
-        height: 3.4px;
+        height: 3.42px;
         top: 58.5%;
     }
 
