@@ -1,3 +1,5 @@
+initialSlice = true
+
 function onLoadHandler() {
     let preloader = document.querySelector('.preloader');
     preloader.querySelector('.triangle').style.display = "none";
@@ -124,6 +126,7 @@ function handleScrollEvent() {
     animateWorkExperienceTimeline();
     animateEducationIntroIcons();
     animateSkillSectionIntro();
+    animateSkillSectionInitialHeading();
     animateSkillsScroll();
 }
 
@@ -158,7 +161,7 @@ function playOrScrollIndication(scrolled = true) {
     }
 }
 
-var elementIDsWithChangedBackgroundColor = ['educational-qualification'];
+var elementIDsWithChangedBackgroundColor = ['educational-qualification', 'projects'];
 function changeBackgroundColor() {
     let colorSet = false;
     elementIDsWithChangedBackgroundColor.forEach(elementID => {
@@ -246,6 +249,16 @@ function animateSkillSectionIntro() {
     }
 }
 
+function animateSkillSectionInitialHeading() {
+    let element = document.getElementById('front-end-skills-heading');
+    if (initialSlice && element.getBoundingClientRect().top <= (window.innerHeight / 100 * 50)) {
+        if (!element.classList.contains('slice')) {
+            element.classList.add('slice');
+            initialSlice = false;
+        }
+    }
+}
+
 function animateSkillsScroll() {
     let horizontalViewSection = document.getElementById('skills');
     let horizontalViewStickyViewport = document.querySelector('.horizontal-view-sticky-viewport')
@@ -264,23 +277,38 @@ function animateSkillsScroll() {
     if ((document.getElementById('other-skills-start').getBoundingClientRect().left + document.getElementById('other-skills-start').getBoundingClientRect().width / 2) <= window.innerWidth) {
         if (document.getElementById('other-skills-heading').style.transform == "translateY(100%)") {
             document.getElementById('back-end-skills-heading').style.transform = "translateY(-100%)";
-            document.getElementById('other-skills-heading').style.transform = "translateY(0%)";
+            document.getElementById('front-end-skills-heading').style.transform = "translateY(-100%)";
+            document.getElementById('back-end-skills-heading').classList.remove("slice");
+            document.getElementById('other-skills-heading').style.transform = "";
+            document.getElementById('other-skills-heading').classList.add("slice");
         }
     }
     else if ((document.getElementById('back-end-skills-start').getBoundingClientRect().left + document.getElementById('back-end-skills-start').getBoundingClientRect().width / 2) <= window.innerWidth) {
         if (document.getElementById('back-end-skills-heading').style.transform == "translateY(-100%)") {
             document.getElementById('other-skills-heading').style.transform = "translateY(100%)";
-            document.getElementById('back-end-skills-heading').style.transform = "translateY(0%)";
+            document.getElementById('front-end-skills-heading').style.transform = "translateY(-100%)";
+            document.getElementById('other-skills-heading').classList.remove("slice");
+            document.getElementById('front-end-skills-heading').classList.remove("slice");
+            document.getElementById('back-end-skills-heading').style.transform = "";
+            document.getElementById('back-end-skills-heading').classList.add("slice");
         }
         else if (document.getElementById('back-end-skills-heading').style.transform == "translateY(100%)") {
             document.getElementById('front-end-skills-heading').style.transform = "translateY(-100%)";
-            document.getElementById('back-end-skills-heading').style.transform = "translateY(0%)";
+            document.getElementById('other-skills-heading').style.transform = "translateY(100%)";
+            document.getElementById('front-end-skills-heading').classList.remove("slice");
+            document.getElementById('other-skills-heading').classList.remove("slice");
+            document.getElementById('back-end-skills-heading').style.transform = "";
+            document.getElementById('back-end-skills-heading').classList.add("slice");
         }
     }
     else {
         if (document.getElementById('front-end-skills-heading').style.transform == "translateY(-100%)") {
             document.getElementById('back-end-skills-heading').style.transform = "translateY(100%)";
-            document.getElementById('front-end-skills-heading').style.transform = "translateY(0%)";
+            document.getElementById('other-skills-heading').style.transform = "translateY(100%)";
+            document.getElementById('back-end-skills-heading').classList.remove("slice");
+            document.getElementById('other-skills-heading').classList.remove("slice");
+            document.getElementById('front-end-skills-heading').style.transform = "";
+            document.getElementById('front-end-skills-heading').classList.add("slice");
         }
     }
 }

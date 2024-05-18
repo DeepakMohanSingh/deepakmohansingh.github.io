@@ -19,6 +19,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -366,10 +367,10 @@
         <div id="educational-qualification" class="section">
             <div class="container">
                 <div class="educational-qualification-sticky-content">
-                    <div class="hideY">
+                    <div>
                         EDUCATIONAL
                     </div>
-                    <div class="hideY">
+                    <div>
                         QUALIFICATION
                     </div>
                 </div>
@@ -495,6 +496,45 @@
                             </div>
 
                             <div id="ed-slide-4" class="slide">
+                                <div class="project-wrapper">
+                                    <div class="project-heading">
+                                        Projects.
+                                    </div>
+                                    <div class="project-container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="project-number">
+                                                    1.
+                                                </div>
+                                                <div class="project-name">
+                                                    Student Learning App
+                                                </div>
+                                                <div class="project-description">
+                                                    A Spring Boot Microservice project with OAuth2.0, Centralized config
+                                                    management,
+                                                    Service discovery, API gateway and Observability.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="project-number">
+                                                    2.
+                                                </div>
+                                                <div class="project-name">
+                                                    Module Management
+                                                </div>
+                                                <div class="project-description">
+                                                    A Spring Boot Microservice Application programming practice to
+                                                    understand
+                                                    building
+                                                    and deploying of microservices through Jenkins pipeline.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="ed-slide-5" class="slide">
                                 <div class="education-summary">
                                     <div class="heading">
                                         <div class="slide-content-number">
@@ -527,7 +567,7 @@
                                         <div class="row m-0">
                                             <div class="col-5 col-md-3 summary-content">
                                                 <div class="summary-number">
-                                                    10
+                                                    8
                                                 </div>
                                                 <div class="summary-heading">
                                                     Certifications
@@ -597,17 +637,16 @@
             <div class="horizontal-view-sticky-viewport">
                 <div class="container">
                     <div class="skill-type-wrapper">
-                        <div class="skill-type" id="front-end-skills-heading">
-                            <span class="hashtag">FRONT</span>
-                            <span>END</span>
+                        <div class="skill-type" id="front-end-skills-heading" data-text="FRONT END">
+                            FRONT END
                         </div>
-                        <div class="skill-type" id="back-end-skills-heading" style="transform: translateY(100%)">
-                            <span class="hashtag">BACK</span>
-                            <span>END</span>
+                        <div class="skill-type" id="back-end-skills-heading" data-text="BACK END"
+                            style="transform: translateY(100%)">
+                            BACK END
                         </div>
-                        <div class="skill-type" id="other-skills-heading" style="transform: translateY(100%)">
-                            <span class="hashtag">OTHER</span>
-                            <span>TOOLS & TECH</span>
+                        <div class="skill-type" id="other-skills-heading" data-text="OTHER TOOLS & TECH"
+                            style="transform: translateY(100%)">
+                            OTHER TOOLS & TECH
                         </div>
                         <div class="skill-type-indication">
                             <span class="material-symbols-outlined">
@@ -663,6 +702,12 @@
                         <img src="assets/java.svg" class="img-fluid">
                         <div class="skill-name">
                             Java
+                        </div>
+                    </div>
+                    <div class="horizontal-view-element">
+                        <img src="assets/spring.svg" class="img-fluid">
+                        <div class="skill-name">
+                            Spring Boot
                         </div>
                     </div>
                     <div class="horizontal-view-element">
@@ -826,6 +871,163 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="section">
+            <div class="container">
+                <div class="projects-sticky-content">
+                    <div class="text-stroke-intro">
+                        <div class="text-stroke-wrapper hideY">
+                            <span class="text-stroke-real">PROJECTS</span>
+                            <span class="text-stroke-duplicate">PROJECTS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-non-sticky-content">
+                    <div class="row pt-2">
+                        <div class="col-lg-6 p-3">
+                            <div class="project-display-wrapper">
+                                <div class="project-display-details-wrapper">
+                                    <div class="pb-3">
+                                        <span>
+                                            Movie360,
+                                        </span>
+                                        <span class="project-display-description">
+                                            an Angular application programming practice that fetches any movie details
+                                            using the OMDB (Open
+                                            Movie
+                                            Database) API.
+                                        </span>
+                                    </div>
+                                    <div class="project-display-tools">
+                                        <img src="assets/angular.svg">
+                                        <img src="assets/html.svg">
+                                        <img src="assets/css.svg">
+                                    </div>
+                                </div>
+                                <div class="project-display">
+                                    <img src="assets/movie360 2.gif">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-3">
+                            <div class="project-display-wrapper">
+                                <div class="project-display-details-wrapper">
+                                    <div class="pb-3">
+                                        <span>
+                                            Dataset Analysis and Visualization,
+                                        </span>
+                                        <span class="project-display-description">
+                                            a Python programming practice to analyse and visualise a dataset.
+                                        </span>
+                                    </div>
+                                    <div class="project-display-tools">
+                                        <img src="assets/python.svg">
+                                    </div>
+                                </div>
+                                <div class="project-display">
+                                    <img src="assets/dataset 2.gif">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-3">
+                            <div class="project-display-wrapper">
+                                <div class="project-display-details-wrapper">
+                                    <div class="pb-3">
+                                        <span>
+                                            Student Learning App,
+                                        </span>
+                                        <span class="project-display-description">
+                                            a Spring Boot Microservice project with OAuth2.0, Centralized config
+                                            management,
+                                            Service discovery, API gateway and Observability.
+                                        </span>
+                                    </div>
+                                    <div class="project-display-tools">
+                                        <img src="assets/spring.svg">
+                                    </div>
+                                </div>
+                                <div class="project-display">
+                                    <img src="assets/microservice.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-3">
+                            <div class="project-display-wrapper">
+                                <div class="project-display-details-wrapper">
+                                    <div class="pb-3">
+                                        <span>
+                                            Module Management,
+                                        </span>
+                                        <span class="project-display-description">
+                                            a Spring Boot Microservice Application programming practice to understand
+                                            building
+                                            and deploying of microservices through Jenkins pipeline.
+                                        </span>
+                                    </div>
+                                    <div class="project-display-tools">
+                                        <img src="assets/spring.svg">
+                                        <img src="assets/docker.svg">
+                                        <img src="assets/jenkins.svg">
+                                    </div>
+                                </div>
+                                <div class="project-display">
+                                    <img src="assets/cicd.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-3">
+                            <div class="project-display-wrapper">
+                                <div class="project-display-details-wrapper">
+                                    <div class="pb-3">
+                                        <span>
+                                            Portfolio site,
+                                        </span>
+                                        <span class="project-display-description">
+                                            a site built to outline personal profile and showcase projects, skills and
+                                            achievements - The site you are in
+                                            right now :)
+                                        </span>
+                                    </div>
+                                    <div class="project-display-tools">
+                                        <img src="assets/html.svg">
+                                        <img src="assets/css.svg">
+                                        <img src="assets/javascript.svg">
+                                    </div>
+                                </div>
+                                <div class="project-display">
+                                    <img src="assets/portfolio 2.gif">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-3">
+                            <div class="project-display-wrapper">
+                                <div class="project-display-details-wrapper">
+                                    <div class="pb-3">
+                                        <span>
+                                            Twilio integration with Zoho Cliq,
+                                        </span>
+                                        <span class="project-display-description">
+                                            a chat bot built within Zoho Cliq, to support programmed SMS and calls
+                                            alongside features like automated reminders and personalized SMS
+                                            notification within Cliq.
+                                        </span>
+                                    </div>
+                                    <div class="project-display-tools">
+                                        <img src="assets/cliq.png" style="margin-right: 0.5rem;">
+                                        <img src="assets/twilio.png">
+                                    </div>
+                                </div>
+                                <div class="project-display">
+                                    <img src="assets/twilio-cliq 2.gif">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-non-sticky-content">
                 </div>
             </div>
         </div>
