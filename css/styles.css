@@ -1192,9 +1192,7 @@ main {
 }
 
 .project-display {
-    /* padding-left: 4rem;
-    height: 16.5rem; */
-    height: 8.5rem;
+    height: auto;
     padding-left: 2rem;
 }
 
