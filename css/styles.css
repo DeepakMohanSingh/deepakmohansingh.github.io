@@ -1164,9 +1164,6 @@ main {
 }
 
 .project-display-details-wrapper {
-    /* padding: 4rem;
-    padding-bottom: 3rem;
-    font-size: 1.4rem; */
     line-height: 1.375;
     font-weight: 600;
     padding: 2rem;
@@ -1181,7 +1178,6 @@ main {
 .project-display-tools {
     display: flex;
     padding-bottom: 3rem;
-    /* height: 5rem; */
     height: 4.575rem;
 }
 
