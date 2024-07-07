@@ -29,8 +29,22 @@
         font-size: 1rem;
     }
 
+    .about-sticky-content {
+        display: none;
+    }
+
     .para-highlight {
         font-size: 2.15rem;
+    }
+
+    .experience-wrapper .experience.experience-header {
+        font-size: 4.45rem;
+    }
+
+    .experience-wrapper .experience {
+        padding: 0.85rem;
+        border-radius: 0.95rem;
+        margin-left: 0.85rem;
     }
 
     .timeline {
@@ -47,7 +61,7 @@
     }
 
     #education .container .ed-intro {
-        font-size: 3rem;
+        font-size: 3.25rem;
     }
 
     .educational-qualification-sticky-content,
@@ -58,6 +72,22 @@
     .educational-qualification-non-sticky-content,
     .projects-non-sticky-content {
         padding: 1rem;
+    }
+
+    .education .course-wrapper {
+        font-size: 4rem;
+    }
+    
+    .education .course-number {
+        font-size: 2rem;
+    }
+    
+    .course-details-wrapper .course-spec {
+        font-size: 1.85rem;
+    }
+    
+    .course-details-wrapper .course-from {
+        font-size: 1.25rem;
     }
 
     .degree-wrapper .slide-content-number,
@@ -76,7 +106,7 @@
 
     .skills-intro,
     .skills-intro-animation div:nth-child(2) {
-        font-size: 6rem;
+        font-size: 7rem;
     }
 
     .skill-type {
@@ -87,7 +117,7 @@
         font-size: 1.8rem;
     }
 
-    .text-stroke-intro {
+    .section-header {
         font-size: 4rem;
         margin-bottom: 1.2rem;
     }
@@ -191,8 +221,23 @@
         width: 0.6rem;
     }
 
+    .about-sticky-content{
+        display: block;
+        font-size: 5rem;
+    }
+
     .para-highlight {
-        font-size: 2.38rem;
+        font-size: 2.25rem;
+    }
+
+    .experience-wrapper .experience.experience-header {
+        font-size: 6rem;
+    }
+
+    .experience-wrapper .experience {
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-left: 1rem;
     }
 
     .experience .when {
@@ -227,6 +272,22 @@
     .educational-qualification-non-sticky-content,
     .projects-non-sticky-content {
         padding: 1.5rem;
+    }
+
+    .education .course-wrapper {
+        font-size: 5rem;
+    }
+    
+    .education .course-number {
+        font-size: 2.5rem;
+    }
+    
+    .course-details-wrapper .course-spec {
+        font-size: 2rem;
+    }
+    
+    .course-details-wrapper .course-from {
+        font-size: 1.38rem;
     }
 
     .about-degree-wrapper {
@@ -281,7 +342,7 @@
 
     .skills-intro,
     .skills-intro-animation div:nth-child(2) {
-        font-size: 7rem;
+        font-size: 9.5rem;
     }
 
     .horizontal-view-element {
@@ -313,7 +374,7 @@
         font-size: 1.45rem;
     }
 
-    .text-stroke-intro {
+    .section-header {
         font-size: 5.2rem;
         margin-bottom: 1.3rem;
     }
@@ -562,20 +623,28 @@
         height: 1.56rem;
     }
 
+    .about-sticky-content {
+        font-size: 6rem;
+    }
+
     .para-highlight {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
 
-    .timeline {
+    .experience-wrapper .experience.experience-header {
+        font-size: 8rem;
+    }
+
+    /* .timeline {
         margin-block: 1.25rem;
-    }
+    } */
 
-    .experience-wrapper {
+    /* .experience-wrapper {
         margin: 1.25rem;
-    }
+    } */
 
     #education .container .ed-intro {
-        font-size: 4.2rem;
+        font-size: 4.5rem;
     }
 
     .educational-qualification-sticky-content,
@@ -586,6 +655,22 @@
     .educational-qualification-non-sticky-content,
     .projects-non-sticky-content {
         padding: 2.5rem;
+    }
+
+    .education .course-wrapper {
+        font-size: 6rem;
+    }
+    
+    .education .course-number {
+        font-size: 3rem;
+    }
+    
+    .course-details-wrapper .course-spec {
+        font-size: 2.5rem;
+    }
+    
+    .course-details-wrapper .course-from {
+        font-size: 1.5rem;
     }
 
     .degree-wrapper .slide-content-number,
@@ -637,10 +722,10 @@
 
     .skills-intro,
     .skills-intro-animation div:nth-child(2) {
-        font-size: 8rem;
+        font-size: 11.5rem;
     }
 
-    .text-stroke-intro {
+    .section-header {
         font-size: 7.2rem;
         margin-bottom: 1.5rem;
     }
@@ -700,20 +785,28 @@
         width: 0.75rem;
     }
 
+    .about-sticky-content {
+        font-size: 7.75rem;
+    }
+
     .para-highlight {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
     }
 
-    .timeline {
+    .experience-wrapper .experience.experience-header {
+        font-size: 10rem;
+    }
+
+    /* .timeline {
         margin-block: 1.4rem;
-    }
+    } */
 
-    .experience-wrapper {
+    /* .experience-wrapper {
         margin: 1.4rem;
-    }
+    } */
 
     #education .container .ed-intro {
-        font-size: 4.6rem;
+        font-size: 4.88rem;
     }
 
     .educational-qualification-sticky-content,
@@ -724,6 +817,22 @@
     .educational-qualification-non-sticky-content,
     .projects-non-sticky-content {
         padding: 3.3rem;
+    }
+
+    .education .course-wrapper {
+        font-size: 6.5rem;
+    }
+    
+    .education .course-number {
+        font-size: 3.1rem;
+    }
+    
+    .course-details-wrapper .course-spec {
+        font-size: 2.75rem;
+    }
+    
+    .course-details-wrapper .course-from {
+        font-size: 1.65rem;
     }
 
     .degree-wrapper .slide-content-number,
@@ -781,7 +890,7 @@
 
     .skills-intro,
     .skills-intro-animation div:nth-child(2) {
-        font-size: 9rem;
+        font-size: 12.5rem;
     }
 
     .horizontal-view-element {
@@ -814,7 +923,7 @@
         font-size: 1.55rem;
     }
 
-    .text-stroke-intro {
+    .section-header {
         font-size: 9rem;
         margin-bottom: 1.8rem;
     }
@@ -830,10 +939,6 @@
 
     .project-display {
         height: 14.755rem;
-    }
-
-    .text-stroke-real {
-        -webkit-text-stroke: 3px var(--color);
     }
 
     @keyframes scroll-down {
@@ -1045,20 +1150,28 @@
         height: calc(100% - ((3.5rem * 1.5) + 4rem));
     }
 
+    .about-sticky-content {
+        font-size: 8.45rem;
+    }
+
     .para-highlight {
-        font-size: 3rem;
+        font-size: 2.9rem;
     }
 
-    .timeline {
+    /* .timeline {
         margin-block: 1.5rem;
-    }
+    } */
 
-    .experience-wrapper {
+    /* .experience-wrapper {
         margin: 1.5rem;
+    } */
+
+    .experience-wrapper .experience.experience-header {
+        font-size: 12rem;
     }
 
     #education .container .ed-intro {
-        font-size: 5.1rem;
+        font-size: 5.5rem;
     }
 
     .educational-qualification-sticky-content,
@@ -1069,6 +1182,22 @@
     .educational-qualification-non-sticky-content,
     .projects-non-sticky-content {
         padding: 4rem;
+    }
+
+    .education .course-wrapper {
+        font-size: 7rem;
+    }
+    
+    .education .course-number {
+        font-size: 3.5rem;
+    }
+    
+    .course-details-wrapper .course-spec {
+        font-size: 3rem;
+    }
+    
+    .course-details-wrapper .course-from {
+        font-size: 1.85rem;
     }
 
     .degree-wrapper .slide-content-number,
@@ -1129,7 +1258,7 @@
 
     .skills-intro,
     .skills-intro-animation div:nth-child(2) {
-        font-size: 10rem;
+        font-size: 14rem;
     }
 
     .horizontal-view-element {
@@ -1162,7 +1291,7 @@
         font-size: 1.75rem;
     }
 
-    .text-stroke-intro {
+    .section-header {
         font-size: 10rem;
         margin-bottom: 2rem;
     }

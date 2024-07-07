@@ -106,7 +106,7 @@ main {
 
 .logo {
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 600;
     position: absolute;
     top: 0;
     left: 0.5rem;
@@ -186,6 +186,11 @@ main {
     justify-content: center;
     font-size: 3rem;
     line-height: 1.3;
+    font-weight: 600;
+}
+
+.menu-item-wrapper .menu-item {
+    opacity: 0;
 }
 
 .menu-item-wrapper .menu-item span {
@@ -316,7 +321,7 @@ main {
 .scroll-indication {
     height: 3rem;
     width: 1.78rem;
-    border: 0.1rem solid var(--color);
+    border: 0.2rem solid var(--color);
     border-radius: 2rem;
     text-align: center;
     display: flex;
@@ -391,14 +396,46 @@ main {
 
 /* About */
 
+#about .container {
+    height: auto;
+    overflow: unset;
+    align-items: unset;
+}
+
+.about-sticky-content {
+    position: sticky;
+    height: 100dvh;
+    top: 0;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    display: none;
+}
+
+.about-sticky-content .about-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-sticky-content .about-header div {
+    line-height: 0.78;
+}
+
+.about-non-sticky-content {
+    margin-top: 100dvh;
+    margin-bottom: 100dvh;
+    padding: 1rem;
+}
+
 .para-highlight {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, system-ui;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.75rem;
     padding: 1rem;
     color: var(--color__faded);
-    letter-spacing: -0.1rem;
-    line-height: 1.38;
+    letter-spacing: -0.038rem;
+    line-height: 1.4;
 }
 
 .para-highlight span {
@@ -420,9 +457,11 @@ main {
     text-align: center;
     background-color: var(--background-color__secondary);
     flex-shrink: 0;
-    margin-block: 1rem;
+    /* margin-block: 1rem; */
     overflow: hidden;
     position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .timeline::before {
@@ -454,6 +493,7 @@ main {
     transform: rotate(180deg);
     position: relative;
     z-index: 2;
+    transition: all ease-in;
 }
 
 .timeline .experience-lap {
@@ -488,12 +528,29 @@ main {
 }
 
 .experience-wrapper {
-    margin: 1rem;
+    /* margin: 1rem; */
     margin-right: unset !important;
 }
 
 .experience-wrapper .experience {
-    padding-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.85rem;
+    margin-left: 0.5rem;
+}
+
+.experience-wrapper .experience.experience-header {
+    min-height: 100dvh;
+    font-weight: 800;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 0.78;
+}
+
+.experience-wrapper .experience .experience-bg {
+    padding: 1rem;
 }
 
 .experience-wrapper .experience:last-child {
@@ -530,15 +587,14 @@ main {
 .experience .with {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1.5rem;
 }
 
 .experience .with .pitstop {
     display: flex;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 5px;
-    background: rgb(221, 221, 221);
-    padding: 0.25rem;
+    border: 1px solid var(--color__faded__secondary);
+    border-radius: 1rem;
+    /* background: rgb(221, 221, 221); */
+    padding: 0.5rem;
     margin-right: 0.5rem;
     flex-shrink: 0;
     margin-bottom: 0.25rem;
@@ -552,8 +608,7 @@ main {
 /* Education */
 
 #education .container .ed-intro {
-    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 800;
     line-height: 1.3;
     text-align: center;
@@ -576,10 +631,15 @@ main {
     align-items: center;
     font-size: 2.5rem;
     font-weight: 500;
+    transition: background-color 0.5s linear, color 0.4s linear;
+}
+
+.educational-qualification-sticky-content .ed-header {
+    text-align: center;
     line-height: 1.2;
 }
 
-.educational-qualification-sticky-content div {
+.ed-header div {
     background: -webkit-linear-gradient(#aaa, #333);
     background: linear-gradient(#aaa, #333);
     -webkit-background-clip: text;
@@ -588,7 +648,56 @@ main {
     color: transparent;
 }
 
-.educational-qualification-non-sticky-content {
+.educational-qualification-sticky-content .education {
+    /* font-size: 5rem; */
+    font-family: 'Antonio';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: 1;
+}
+
+.education .course-wrapper {
+    font-size: 3rem;
+    /* font-size: 7rem; */
+    font-weight: 600;
+}
+
+.education .course-number {
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Antonio';
+    font-size: 1.5rem;
+    /* font-size: 3rem; */
+    vertical-align: super;
+    padding-right: 2rem;
+}
+
+.education .course-title {
+    font-family: 'Tommy Outline';
+}
+
+.education .course-details-wrapper {
+    font-weight: 500;
+}
+
+.course-details-wrapper .course-spec {
+    font-size: 1.5rem;
+    /* font-size: 3rem; */
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.course-details-wrapper .course-from {
+    font-size: 1rem;
+    /* font-size: 1.5rem; */
+    text-decoration: underline;
+}
+
+/* .educational-qualification-non-sticky-content {
     height: 100dvh;
     width: 100%;
     z-index: 1;
@@ -628,7 +737,7 @@ main {
     white-space: normal;
     overflow-y: auto;
     overflow-x: hidden;
-}
+} */
 
 .degree-wrapper {
     height: 100%;
@@ -879,44 +988,24 @@ main {
 /* Skills */
 
 .skills-intro {
-    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 4.25rem;
+    font-size: 5rem;
     font-weight: 900;
     line-height: 0.85;
     width: 100%;
-    text-align: center;
-}
-
-.skills-intro div {
-    transition: 1.5s ease-out;
-    -webkit-transition: 1.5s ease-out;
-    -moz-transition: 1.5s ease-out;
-    -o-transition: 1.5s ease-out;
-}
-
-.skills-intro div:nth-child(1) {
-    position: relative;
-    left: -100%;
-}
-
-.skills-intro div:nth-child(2) {
-    font-size: 0;
 }
 
 .skills-intro div:nth-child(3) {
-    position: relative;
-    left: 100%;
     color: var(--color__important_word);
 }
 
-.skills-intro-animation div:nth-child(1),
+/* .skills-intro-animation div:nth-child(1),
 .skills-intro-animation div:nth-child(3) {
     left: 0;
 }
 
 .skills-intro-animation div:nth-child(2) {
     font-size: 4.25rem;
-}
+} */
 
 .horizontal-view-sticky-viewport {
     position: sticky;
@@ -1020,8 +1109,7 @@ main {
     -o-transition: all 0.5s;
     background: var(--background-color);
     animation: slice 300ms forwards 0.35s ease-in-out;
-    background: rgb(0, 171, 0);
-    background: radial-gradient(circle, rgba(0, 171, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: radial-gradient(circle, var(--color__important_word) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .skill-type-indication {
@@ -1344,7 +1432,7 @@ main {
 
 /* General/Helper */
 
-.text-stroke-intro {
+.section-header {
     font-size: 3rem;
     font-weight: 800;
     line-height: 1.125;
@@ -1352,29 +1440,34 @@ main {
     margin-bottom: 1rem;
 }
 
-.text-stroke-wrapper {
-    display: inline-block;
-    position: relative;
+.text-stroke {
+    font-family: 'Tommy Outline', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, system-ui;
 }
 
-.text-stroke-real {
-    -webkit-text-stroke: 1.5px var(--color);
-}
-
-.text-stroke-duplicate {
-    -webkit-text-stroke: 0px;
-    color: var(--background-color);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.hideY {
+.hideY,
+.hideYToBottom {
     transform: translateY(30px);
     -o-transform: translateY(30px);
     -ms-transform: translateY(30px);
     -moz-transform: translateY(30px);
     -webkit-transform: translateY(30px);
+    transition: transform 1s ease, opacity 1s ease;
+    -webkit-transition: transform 1s ease, opacity 1s ease;
+    -moz-transition: transform 1s ease, opacity 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+}
+
+.hideYToTop {
+    transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transition: transform 1s ease, opacity 1s ease;
+    -webkit-transition: transform 1s ease, opacity 1s ease;
+    -moz-transition: transform 1s ease, opacity 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease;
     opacity: 0;
 }
 

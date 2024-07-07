@@ -121,9 +121,12 @@ function handleScrollEvent() {
     changeBackgroundColor();
     highlightWords();
     workExperienceTimelineFormation();
+    //animateWorkExperienceIntroTimeline();
     animateWorkExperienceTimeline();
-    animateEducationIntroIcons();
-    animateSkillSectionIntro();
+    animateEducationReveal();
+    hideOrShowEducationElements();
+    //animateEducationIntroIcons();
+    //animateSkillSectionIntro();
     animateSkillSectionInitialHeading();
     animateSkillsScroll();
 }
@@ -145,6 +148,22 @@ function showHiddenElements() {
     //     }
     // });
 }
+
+// function hideShownElements() {
+//     specifiedElementClasses = ["skills-intro", "education"];
+//     specifiedElementClasses.forEach(specifiedElementClass => {
+//         let children = document.querySelectorAll(`.${specifiedElementClass}`)
+//         children.forEach(child => {
+//             let shownElements = child.querySelectorAll('.showY');
+//             shownElements.forEach(shownElement => {
+//                 if (child.getBoundingClientRect().bottom <= (window.innerHeight / 100 * 75)) {
+//                     shownElement.classList.add('hideY');
+//                     shownElement.classList.remove('showY');
+//                 }
+//             })
+//         });
+//     })
+// }
 
 function playOrScrollIndication(scrolled = true) {
     if (dontBlinkAnimationTriggeredAtleastOnce && dontBlinkIndex == 0) {
@@ -185,12 +204,12 @@ function highlightWords() {
     let totalWords = words.length;
 
     let boundingClientRect = element.getBoundingClientRect();
-    let elementTop = element.offsetTop - window.innerHeight / 2;
-    let elementBottom = elementTop + boundingClientRect.height;
+    let elementTop = element.offsetTop + window.innerHeight / 2;
+    let elementBottom = elementTop + boundingClientRect.height - window.innerHeight * 2;
 
     if (window.scrollY >= elementTop && window.scrollY <= elementBottom) {
         let scrolledInside = window.scrollY - elementTop;
-        let scrollPercentage = (100 / boundingClientRect.height) * scrolledInside;
+        let scrollPercentage = (100 / (boundingClientRect.height - window.innerHeight * 2)) * scrolledInside;
         let totalWordsToHighlight = Math.ceil((totalWords / 100) * scrollPercentage);
 
         for (let wordCount = 1; wordCount <= totalWords; wordCount++) {
@@ -217,34 +236,193 @@ function workExperienceTimelineFormation() {
     }
 }
 
+// function animateWorkExperienceIntroTimeline() {
+//     let introTimeline = document.querySelector('.intro-timeline');
+//     let boundingClientRect = introTimeline.getBoundingClientRect();
+//     let halfOfViewportHeight = window.innerHeight / 2;
+//     let introCar = document.querySelector('.intro-timeline').querySelector('.intro-car');
+//     if (boundingClientRect.top <= halfOfViewportHeight && boundingClientRect.bottom >= halfOfViewportHeight) {
+//         let totalHeight = halfOfViewportHeight + boundingClientRect.height;
+//         let scrolled = totalHeight - (boundingClientRect.top + boundingClientRect.height);
+//         let scrollPercentage = (100 / (totalHeight - halfOfViewportHeight)) * scrolled;
+
+//         if (scrolled + introCar.getBoundingClientRect().height <= boundingClientRect.height)
+//             introCar.style.transform = `rotate(180deg) translateY(-${scrolled}px)`;
+
+//         // let timeline = document.querySelector('.timeline');
+//         // let car = timeline.querySelector('.car');
+
+//         // desiredWidthPercentage = (25 / 100) * (100 - ((100 / (totalHeight - (2 * halfOfViewportHeight))) * scrolled))
+//         // introTimeline.style.width = `${desiredWidthPercentage}%`
+
+//         // console.log(document.querySelector('.intro-timeline').getBoundingClientRect().width)
+
+//         // if (document.querySelector('.intro-timeline').getBoundingClientRect().width < timeline.getBoundingClientRect().width)
+//         //     introTimeline.style.width = `${timeline.getBoundingClientRect().width}px`
+
+//         // console.log({
+//         //     totalHeight: totalHeight,
+//         //     boundingClientRectTop: boundingClientRect.top,
+//         //     boundingClientRectHeight: boundingClientRect.height,
+//         //     scrolled: scrolled,
+//         //     scrollPercentage: scrollPercentage,
+//         //     timeline: timeline.getBoundingClientRect().width,
+//         //     car: car.getBoundingClientRect().width,
+//         //     introTimeline: introTimeline.getBoundingClientRect().width
+//         // })
+//     }
+//     else if (boundingClientRect.bottom < halfOfViewportHeight) {
+//         introCar.style.transform = `rotate(180deg) translateY(-${boundingClientRect.height - introCar.getBoundingClientRect().height}px)`;
+//     }
+//     else {
+//         introCar.style.transform = `rotate(180deg)`;
+//     }
+// }
+
 function animateWorkExperienceTimeline() {
     let experienceWrapper = document.querySelector('.experience-wrapper');
     let boundingClientRect = experienceWrapper.getBoundingClientRect();
-    let halfOfViewportHeight = window.innerHeight / 100 * 50;
-    if (boundingClientRect.top <= halfOfViewportHeight && boundingClientRect.bottom > halfOfViewportHeight) {
-        let car = document.querySelector('.timeline').querySelector('.car');
+    let halfOfViewportHeight = window.innerHeight / 2;
+    let car = document.querySelector('.timeline').querySelector('.car');
+    if (boundingClientRect.top <= halfOfViewportHeight && boundingClientRect.bottom >= halfOfViewportHeight) {
         let scrolled = (halfOfViewportHeight + boundingClientRect.height) - (boundingClientRect.top + boundingClientRect.height);
         if (scrolled + car.getBoundingClientRect().height <= boundingClientRect.height)
             car.style.transform = `rotate(180deg) translateY(-${scrolled}px)`;
+
+        let laps = document.querySelectorAll('.experience-lap');
+        let experiences = document.querySelectorAll('.experience');
+        let experienceIndex = -1
+        for (let index = 1; index < laps.length; index++) {
+            topIndex = laps[index].style.top.indexOf("px")
+            topPixels = 0
+            if (topIndex > -1)
+                topPixels = +laps[index].style.top.substring(0, topIndex)
+            if (scrolled >= topPixels)
+                experienceIndex = index
+        }
+        if (experienceIndex > -1) {
+            for (let index = 1; index < experiences.length; index++) {
+                if (index == experienceIndex) {
+                    experiences[index].style.transition = "all 300ms ease-in-out"
+                    experiences[index].style.backgroundColor = "var(--background-color__secondary)"
+                    experiences[index].style.color = "var(--color__secondary)"
+                    experiences[index].querySelector('.where').style.color = "var(--color__light_secondary)"
+                }
+                else {
+                    experiences[index].style.transition = "all 125ms ease-out"
+                    experiences[index].style.backgroundColor = "unset"
+                    experiences[index].style.color = "inherit"
+                    experiences[index].querySelector('.where').style.color = "var(--color__light_primary)"
+                }
+            }
+        }
+    }
+    else if (boundingClientRect.bottom < halfOfViewportHeight) {
+        car.style.transform = `rotate(180deg) translateY(-${boundingClientRect.height - car.getBoundingClientRect().height}px)`;
+    }
+    else {
+        car.style.transform = `rotate(180deg)`;
+    }
+
+    let experiences = document.querySelectorAll('.experience');
+    if (experiences[1].getBoundingClientRect().top > halfOfViewportHeight || experiences[experiences.length - 1].getBoundingClientRect().bottom < halfOfViewportHeight) {
+        for (let index = 1; index < experiences.length; index++) {
+            experiences[index].style.transition = "all 125ms ease-out"
+            experiences[index].style.backgroundColor = "unset"
+            experiences[index].style.color = "inherit"
+            experiences[index].querySelector('.where').style.color = "var(--color__light_primary)"
+        }
     }
 }
 
-function animateEducationIntroIcons() {
-    let icons = document.getElementById('education').querySelectorAll('.material-symbols-outlined');
-    icons.forEach(icon => {
-        if (icon.getBoundingClientRect().top <= (window.innerHeight / 100 * 65))
-            icon.style.color = 'limegreen';
-        else
-            icon.style.color = window.getComputedStyle(document.documentElement).getPropertyValue('--color');
+// function animateEducationIntroIcons() {
+//     let icons = document.getElementById('education').querySelectorAll('.material-symbols-outlined');
+//     icons.forEach(icon => {
+//         if (icon.getBoundingClientRect().top <= (window.innerHeight / 100 * 65))
+//             icon.style.color = 'limegreen';
+//         else
+//             icon.style.color = window.getComputedStyle(document.documentElement).getPropertyValue('--color');
+//     });
+// }
+
+// function animateSkillSectionIntro() {
+//     let element = document.querySelector('.skills-intro');
+//     if (element.getBoundingClientRect().top <= (window.innerHeight / 100 * 50)) {
+//         if (!element.classList.contains('skills-intro-animation'))
+//             element.classList.add('skills-intro-animation');
+//     }
+// }
+
+function animateEducationReveal() {
+    let stickyContents = document.querySelectorAll('.educational-qualification-sticky-content')
+    let boundingClientRect = stickyContents[stickyContents.length - 2].getBoundingClientRect();
+    if (boundingClientRect.top <= (window.innerHeight / 2) && boundingClientRect.bottom >= window.innerHeight) {
+        if (stickyContents[stickyContents.length - 1].getBoundingClientRect().top <= stickyContents[stickyContents.length - 2].querySelector('.education').getBoundingClientRect().bottom) {
+            let shownElements = stickyContents[stickyContents.length - 2].querySelectorAll('.showY')
+            shownElements.forEach(shownElement => {
+                shownElement.classList.add('hideYToTop');
+                shownElement.classList.remove('showY');
+            })
+            shownElements = stickyContents[stickyContents.length - 1].querySelectorAll('.hideYToBottom')
+            shownElements.forEach(shownElement => {
+                shownElement.classList.add('showYEducation');
+            })
+        }
+        else {
+            let shownElements = stickyContents[stickyContents.length - 2].querySelectorAll('.hideYToBottom')
+            shownElements.forEach(shownElement => {
+                shownElement.classList.add('showYEducation');
+            })
+            shownElements = stickyContents[stickyContents.length - 2].querySelectorAll('.hideYToTop')
+            shownElements.forEach(shownElement => {
+                shownElement.classList.add('showYEducation');
+            })
+            shownElements = stickyContents[stickyContents.length - 1].querySelectorAll('.showY')
+            shownElements.forEach(shownElement => {
+                shownElement.classList.add('hideYToBottom');
+                shownElement.classList.remove('showY');
+            })
+            // shownElements = stickyContents[stickyContents.length - 1].querySelectorAll('.showEducationY')
+            // shownElements.forEach(shownElement => {
+            //     shownElement.classList.add('hideEducationY');
+            //     shownElement.classList.remove('hideYToTop');
+            //     shownElement.classList.remove('showY');
+            // })
+        }
+    }
+    else {
+        let shownElements = stickyContents[stickyContents.length - 2].querySelectorAll('.showY')
+        shownElements.forEach(shownElement => {
+            shownElement.classList.add('hideYToBottom');
+            shownElement.classList.remove('showY');
+        })
+
+        if (stickyContents[stickyContents.length - 1].getBoundingClientRect().bottom <= (window.innerHeight / 100 * 85)) {
+            shownElements = stickyContents[stickyContents.length - 1].querySelectorAll('.showY')
+            shownElements.forEach(shownElement => {
+                shownElement.classList.add('hideYToTop');
+                shownElement.classList.remove('showY');
+            })
+        }
+        else {
+            shownElements = stickyContents[stickyContents.length - 1].querySelectorAll('.hideYToTop')
+            shownElements.forEach(shownElement => {
+                shownElement.classList.add('showYEducation');
+            })
+        }
+    }
+}
+
+function hideOrShowEducationElements() {
+    let hiddenElements = document.querySelectorAll('.showYEducation');
+    hiddenElements.forEach(hiddenElement => {
+        if (hiddenElement.getBoundingClientRect().top <= (window.innerHeight / 100 * 75)) {
+            hiddenElement.classList.add('showY');
+            hiddenElement.classList.remove('hideYToBottom');
+            hiddenElement.classList.remove('hideYToTop');
+            hiddenElement.classList.remove('showYEducation');
+        }
     });
-}
-
-function animateSkillSectionIntro() {
-    let element = document.querySelector('.skills-intro');
-    if (element.getBoundingClientRect().top <= (window.innerHeight / 100 * 50)) {
-        if (!element.classList.contains('skills-intro-animation'))
-            element.classList.add('skills-intro-animation');
-    }
 }
 
 initialSlice = true
@@ -349,6 +527,11 @@ function toggleMenuButton() {
                 menuIconElements[index].style.transform = "rotate(0deg) translate(-50%, -50%)";
             }
         }
+        let menuItems = document.querySelectorAll('.menu-item');
+        for (let index = 0; index < menuItems.length; index++) {
+            menuItems[index].style.transform = "translateY(30px)";
+            menuItems[index].style.opacity = 0;
+        }
         document.getElementsByTagName('main')[0].style.overflow = 'visible';
     }
     else if ((!menuView.style.left) || menuView.style.left == '100%') {
@@ -368,6 +551,12 @@ function toggleMenuButton() {
                 menuIconElements[index].style.top = "50%";
                 menuIconElements[index].style.transform = "translate(-50%, -50%) rotate(-45deg)";
             }
+        }
+        let menuItems = document.querySelectorAll('.menu-item');
+        for (let index = 0; index < menuItems.length; index++) {
+            menuItems[index].style.transform = "translateY(0px)";
+            menuItems[index].style.transition = `all 0.54s ${0.52 + (0.175 * index)}s ease-in-out`;
+            menuItems[index].style.opacity = 1;
         }
         document.getElementsByTagName('main')[0].style.overflow = 'hidden';
     }
