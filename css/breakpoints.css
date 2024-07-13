@@ -77,15 +77,15 @@
     .education .course-wrapper {
         font-size: 4rem;
     }
-    
+
     .education .course-number {
         font-size: 2rem;
     }
-    
+
     .course-details-wrapper .course-spec {
         font-size: 1.85rem;
     }
-    
+
     .course-details-wrapper .course-from {
         font-size: 1.25rem;
     }
@@ -110,15 +110,15 @@
     }
 
     .skill-type {
-        font-size: 1.8rem;
+        font-size: 3.2rem;
     }
 
     .skill-type-wrapper .material-symbols-outlined {
-        font-size: 1.8rem;
+        font-size: 3.2rem;
     }
 
     .section-header {
-        font-size: 4rem;
+        font-size: 5.75rem;
         margin-bottom: 1.2rem;
     }
 
@@ -221,7 +221,7 @@
         width: 0.6rem;
     }
 
-    .about-sticky-content{
+    .about-sticky-content {
         display: block;
         font-size: 5rem;
     }
@@ -277,15 +277,15 @@
     .education .course-wrapper {
         font-size: 5rem;
     }
-    
+
     .education .course-number {
         font-size: 2.5rem;
     }
-    
+
     .course-details-wrapper .course-spec {
         font-size: 2rem;
     }
-    
+
     .course-details-wrapper .course-from {
         font-size: 1.38rem;
     }
@@ -366,8 +366,12 @@
         height: 1.95px;
     }
 
+    .skill-type {
+        font-size: 3.75rem;
+    }
+
     .skill-type-wrapper .material-symbols-outlined {
-        font-size: 2.2rem;
+        font-size: 3.75rem;
     }
 
     .skill-name {
@@ -375,7 +379,7 @@
     }
 
     .section-header {
-        font-size: 5.2rem;
+        font-size: 6.4rem;
         margin-bottom: 1.3rem;
     }
 
@@ -660,15 +664,15 @@
     .education .course-wrapper {
         font-size: 6rem;
     }
-    
+
     .education .course-number {
         font-size: 3rem;
     }
-    
+
     .course-details-wrapper .course-spec {
         font-size: 2.5rem;
     }
-    
+
     .course-details-wrapper .course-from {
         font-size: 1.5rem;
     }
@@ -822,15 +826,15 @@
     .education .course-wrapper {
         font-size: 6.5rem;
     }
-    
+
     .education .course-number {
         font-size: 3.1rem;
     }
-    
+
     .course-details-wrapper .course-spec {
         font-size: 2.75rem;
     }
-    
+
     .course-details-wrapper .course-from {
         font-size: 1.65rem;
     }
@@ -915,8 +919,12 @@
         top: 60%;
     }
 
+    .skill-type {
+        font-size: 4rem;
+    }
+
     .skill-type-wrapper .material-symbols-outlined {
-        font-size: 3.2rem;
+        font-size: 4rem;
     }
 
     .skill-name {
@@ -1187,15 +1195,15 @@
     .education .course-wrapper {
         font-size: 7rem;
     }
-    
+
     .education .course-number {
         font-size: 3.5rem;
     }
-    
+
     .course-details-wrapper .course-spec {
         font-size: 3rem;
     }
-    
+
     .course-details-wrapper .course-from {
         font-size: 1.85rem;
     }
@@ -1283,8 +1291,12 @@
         top: 58.5%;
     }
 
+    .skill-type {
+        font-size: 4.25rem;
+    }
+
     .skill-type-wrapper .material-symbols-outlined {
-        font-size: 4rem;
+        font-size: 4.25rem;
     }
 
     .skill-name {

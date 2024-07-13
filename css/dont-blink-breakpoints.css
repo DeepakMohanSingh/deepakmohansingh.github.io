@@ -2,25 +2,25 @@
 
 @media (min-width: 350px) {
     .dont-blink-section {
-        --dont-blink-font-size: 2.2rem;
+        --dont-blink-font-size: 2.5rem;
     }
 }
 
 @media (min-width: 375px) {
     .dont-blink-section {
-        --dont-blink-font-size: 2.4rem;
+        --dont-blink-font-size: 2.75rem;
     }
 }
 
 @media (min-width: 400px) {
     .dont-blink-section {
-        --dont-blink-font-size: 2.5rem;
+        --dont-blink-font-size: 3rem;
     }
 }
 
 @media (min-width: 576px) {
     .dont-blink-section {
-        --dont-blink-font-size: 2.85rem;
+        --dont-blink-font-size: 3.15rem;
         --dont-blink-big-text-font-size: 8rem;
     }
 
@@ -32,7 +32,7 @@
 
 @media (min-width: 768px) {
     .dont-blink-section {
-        --dont-blink-font-size: 3.25rem;
+        --dont-blink-font-size: 3.5rem;
         --dont-blink-big-text-font-size: 10rem;
     }
 
@@ -44,7 +44,7 @@
 
 @media (min-width: 992px) {
     .dont-blink-section {
-        --dont-blink-font-size: 4.5rem;
+        --dont-blink-font-size: 4.85rem;
         --dont-blink-big-text-font-size: 13rem;
     }
 
@@ -56,7 +56,7 @@
 
 @media (min-width: 1200px) {
     .dont-blink-section {
-        --dont-blink-font-size: 5rem;
+        --dont-blink-font-size: 5.45rem;
         --dont-blink-big-text-font-size: 15rem;
     }
 
@@ -68,7 +68,7 @@
 
 @media (min-width: 1400px) {
     .dont-blink-section {
-        --dont-blink-font-size: 5.85rem;
+        --dont-blink-font-size: 6rem;
         --dont-blink-big-text-font-size: 17rem;
     }
 

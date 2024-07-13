@@ -1,6 +1,6 @@
 .dont-blink-section {
-    --dont-blink-font-size: 2rem;
-    --dont-blink-big-text-font-size: 5.5rem;
+    --dont-blink-font-size: 2.25rem;
+    --dont-blink-big-text-font-size: 6rem;
     line-height: 1;
     display: none;
     font-size: var(--dont-blink-font-size);
@@ -9,7 +9,7 @@
 }
 
 .dont-blink-section.glitch-intro-text {
-    font-size: 5rem;
+    font-size: 6rem;
     letter-spacing: -0.38rem;
     font-weight: 600;
     animation: glitch-intro-text 2s forwards;

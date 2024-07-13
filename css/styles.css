@@ -541,7 +541,7 @@ main {
 .experience-wrapper .experience.experience-header {
     min-height: 100dvh;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 3.27rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -608,7 +608,7 @@ main {
 /* Education */
 
 #education .container .ed-intro {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 1.3;
     text-align: center;
@@ -629,7 +629,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 2.85rem;
     font-weight: 500;
     transition: background-color 0.5s linear, color 0.4s linear;
 }
@@ -988,7 +988,7 @@ main {
 /* Skills */
 
 .skills-intro {
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: 900;
     line-height: 0.85;
     width: 100%;
@@ -1062,7 +1062,7 @@ main {
 }
 
 .skill-type {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     font-weight: 700;
     position: absolute;
     left: 0;
@@ -1118,7 +1118,7 @@ main {
 }
 
 .skill-type-wrapper .material-symbols-outlined {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     vertical-align: middle;
 }
 
@@ -1190,7 +1190,7 @@ main {
 
 .award-name {
     font-size: 1.38rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1;
     padding-bottom: 0.5rem;
     color: var(--color__primary);
@@ -1433,7 +1433,7 @@ main {
 /* General/Helper */
 
 .section-header {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 800;
     line-height: 1.125;
     text-align: center;
