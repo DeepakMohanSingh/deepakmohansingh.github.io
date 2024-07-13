@@ -364,6 +364,7 @@
 
     .slice::after {
         height: 1.95px;
+        top: 59%;
     }
 
     .skill-type {
@@ -1288,7 +1289,7 @@
 
     .slice::after {
         height: 3.42px;
-        top: 58.5%;
+        top: 59%;
     }
 
     .skill-type {

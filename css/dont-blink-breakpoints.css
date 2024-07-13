@@ -2,25 +2,25 @@
 
 @media (min-width: 350px) {
     .dont-blink-section {
-        --dont-blink-font-size: 2.5rem;
+        --dont-blink-font-size: 2.22rem;
     }
 }
 
 @media (min-width: 375px) {
     .dont-blink-section {
-        --dont-blink-font-size: 2.75rem;
+        --dont-blink-font-size: 2.4rem;
     }
 }
 
 @media (min-width: 400px) {
     .dont-blink-section {
-        --dont-blink-font-size: 3rem;
+        --dont-blink-font-size: 2.55rem;
     }
 }
 
 @media (min-width: 576px) {
     .dont-blink-section {
-        --dont-blink-font-size: 3.15rem;
+        --dont-blink-font-size: 3rem;
         --dont-blink-big-text-font-size: 8rem;
     }
 

@@ -1100,7 +1100,7 @@ main {
     width: 0%;
     position: absolute;
     z-index: 999;
-    top: 62%;
+    top: 60%;
     left: 0;
     transform: translateY(-50%);
     transition: all 0.5s;
